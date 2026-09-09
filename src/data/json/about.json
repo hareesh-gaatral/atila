@@ -7,9 +7,9 @@
     "Built to enforce compliance, governance, and end-to-end visibility across sourcing, purchasing, and supplier management."
   ],
   "images": [
-    "/atilaimages/atilaabout1.png",
-    "/atilaimages/atilaabout2.png",
-    "/atilaimages/atilaabout3.png"
+    "/atilaImages/atilaabout1.png",
+    "/atilaImages/atilaabout2.png",
+    "/atilaImages/atilaabout3.png"
   ],
   "items": [
     { "title": "Enterprise Grade", "description": "Built for large-scale procurement operations", "icon": "🏢" },

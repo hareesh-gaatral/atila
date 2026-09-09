@@ -14,7 +14,7 @@
   "button2Text": "Talk to Expert",
   "button2Link": "/contact",
   "imageUrl": "",
-  "displayImage": "/png/atilaHome.png",
+  "displayImage": "/png/atilahome.png",
   "displayImageAlt": "ATILA Platform",
   "stats": [
     { "value": "500+", "label": "Enterprises" },
