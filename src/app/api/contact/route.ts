@@ -42,8 +42,8 @@ export async function POST(req: Request) {
     ].filter(Boolean);
 
     await sendMail({
-      to: process.env.USER_NAME,
-      cc: ccRecipients,
+      to: process.env.USER_NAME || '',
+      cc: ccRecipients.filter((e): e is string => typeof e === 'string'),
       subject: `New contact message from ${name}`,
       html: notifyHtml,
     });
