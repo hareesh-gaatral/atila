@@ -1,0 +1,27 @@
+{
+  "logo": "/png/productLogo.png",
+  "logoAlt": "ATILA",
+  "description": "Intelligent Procurement for Modern Enterprises. Built by Aatral Technologies, ATILA reflects real-world enterprise procurement challenges and best practices.",
+  "quickLinksTitle": "Quick Links",
+  "quickLinks": [
+    { "label": "Home", "href": "/" },
+    { "label": "About Us", "href": "/#about" },
+    { "label": "Services", "href": "/services" },
+    { "label": "FAQ", "href": "/#faq" },
+    { "label": "Contact", "href": "/#contact" }
+  ],
+  "contactTitle": "Contact",
+  "contact": {
+    "email": "atila@aatraltechnologies.com",
+    "phone": "91-8884481234",
+    "address": "Aatral Technologies, India"
+  },
+  "bottom": {
+    "copyrightPrefix": "©",
+    "copyrightText": "ATILA by Aatral Technologies. All rights reserved.",
+    "privacyLabel": "Privacy Policy",
+    "privacyHref": "#",
+    "termsLabel": "Terms of Service",
+    "termsHref": "#"
+  }
+}

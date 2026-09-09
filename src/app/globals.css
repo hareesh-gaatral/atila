@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #1e3a5f;
+  --secondary: #2c5282;
+  --accent: #e53e3e;
+  --gold: #d69e2e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  @apply bg-[#f8fafc] text-[#334155];
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.dark body {
+  @apply bg-[#0f172a] text-[#cbd5e1];
+}
+
+/* Smooth theme transition on all elements */
+* {
+  transition-property: background-color, border-color, color, box-shadow;
+  transition-timing-function: ease;
+  transition-duration: 0ms;
+}
+
+.theme-transition,
+.theme-transition *,
+.theme-transition *::before,
+.theme-transition *::after {
+  transition-duration: 400ms !important;
+  transition-timing-function: ease !important;
+}
+
+/* Marquee Animation */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 35s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Vertical marquee (Procurement Wheel Buyers / Suppliers columns) */
+@keyframes marquee-y {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+
+/* Left column scrolls up; right column reverses the same keyframes -> down. */
+.animate-marquee-up {
+  animation: marquee-y 42s linear infinite;
+}
+
+.animate-marquee-down {
+  animation: marquee-y 42s linear infinite reverse;
+}
+
+.marquee-viewport:hover .animate-marquee-up,
+.marquee-viewport:hover .animate-marquee-down {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee-up,
+  .animate-marquee-down {
+    animation: none;
+  }
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(120deg, #1e3a5f 0%, #14b8a6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: all 0.4s ease;
+}
+
+.dark .gradient-text {
+  background: linear-gradient(120deg, #2dd4bf 0%, #14b8a6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glass effect */
+.glass {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.dark .glass {
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Shadow */
+.shadow-card {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.dark .shadow-card {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
+.shadow-card-hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.dark .shadow-card-hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.4);
+}
+
+/* Google Translate - Hide banner completely */
+.goog-te-banner-frame,
+.goog-te-banner-framedisplay,
+.skiptranslate,
+.goog-te-banner {
+  display: none !important;
+  height: 0 !important;
+  visibility: hidden !important;
+  position: absolute !important;
+  top: -9999px !important;
+}
+
+/* Remove top offset from body */
+body {
+  top: 0 !important;
+  position: relative !important;
+}
+
+/* Hide the Google Translate element but keep it functional */
+#google_translate_element {
+  position: fixed !important;
+  top: -200px !important;
+  left: -200px !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  z-index: -1 !important;
+}
+
+/* Ensure translated text shows properly */
+.goog-te-banner-framed + body {
+  top: 0 !important;
+}
+
+/* Hide Google Translate tooltip */
+.goog-te-tooltip {
+  display: none !important;
+}

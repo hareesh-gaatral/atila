@@ -1,0 +1,11 @@
+{
+  "title": "Why Choose ATILA",
+  "subtitle": "Key Features",
+  "content": "Powerful features with an intuitive interface.",
+  "items": [
+    { "title": "Cloud Native", "description": "99.9% uptime SaaS", "icon": "☁️" },
+    { "title": "Mobile Ready", "description": "Approve on any device", "icon": "📱" },
+    { "title": "API Integration", "description": "Connect with ERP systems", "icon": "🔗" },
+    { "title": "AI Powered", "description": "Smart automation", "icon": "🤖" }
+  ]
+}

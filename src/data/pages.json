@@ -1,0 +1,15 @@
+{
+  "home": {
+    "slug": "home",
+    "sections": [
+      { "sectionType": "hero" },
+      { "sectionType": "about" },
+      { "sectionType": "services" },
+      { "sectionType": "features" },
+      { "sectionType": "testimonials" },
+      { "sectionType": "faq" },
+      { "sectionType": "cta" },
+      { "sectionType": "contact" }
+    ]
+  }
+}

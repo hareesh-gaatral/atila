@@ -1,0 +1,535 @@
+{
+  "services": [
+    {
+      "slug": "purchase-management",
+      "title": "Purchase Management",
+      "tagline": "Streamline your entire procure-to-pay journey",
+      "description": "Streamlined purchase order creation and approval workflows that give procurement teams complete control over every purchase — from requisition to payment.",
+      "icon": "📋",
+      "link": "/services/purchase-management",
+      "sections": [
+        {
+          "num": "01",
+          "title": "Requisition & Budget Control",
+          "description": "Users raise purchase requisitions with full budget context.",
+          "points": [
+            "Online requisition with item, quantity and need-by date",
+            "Budget check and spend-limit enforcement",
+            "Automatic approval routing by amount and category"
+          ],
+          "result": "Right requests reach the right approvers, first time.",
+          "image": "/png/1.png"
+        },
+        {
+          "num": "02",
+          "title": "Purchase Order Creation",
+          "description": "Convert approved requisitions into purchase orders using configurable templates.",
+          "points": [
+            "Configurable PO templates",
+            "Multi-line items, taxes and delivery terms",
+            "Auto-numbering and revision control"
+          ],
+          "result": "Error-free purchase orders created in minutes.",
+          "image": "/png/2.png"
+        },
+        {
+          "num": "03",
+          "title": "Multi-Level Approval Workflow",
+          "description": "Route POs through governed approvals with SLAs and full audit trails.",
+          "points": [
+            "Conditional approval chains",
+            "SLA-based reminders",
+            "Reject and rework with comments"
+          ],
+          "result": "Governance without bottlenecks.",
+          "image": "/png/3.png"
+        },
+        {
+          "num": "04",
+          "title": "Order Dispatch & Tracking",
+          "description": "Send purchase orders to vendors and keep everyone on the same page.",
+          "points": [
+            "PO shared instantly with the vendor",
+            "Real-time status — sent, accepted, shipped",
+            "Change and amendment tracking"
+          ],
+          "result": "Buyers and vendors always know where an order stands.",
+          "image": "/png/4.png"
+        },
+        {
+          "num": "05",
+          "title": "Goods Receipt & Inspection",
+          "description": "Record receipts and verify that what arrived matches what was ordered.",
+          "points": [
+            "Receipt against PO lines",
+            "Quantity and quality checks",
+            "Discrepancy capture"
+          ],
+          "result": "Accurate stock and early problem detection.",
+          "image": "/png/5.png"
+        },
+        {
+          "num": "06",
+          "title": "Three-Way Match & Payment",
+          "description": "Automate invoice matching to close the procure-to-pay loop.",
+          "points": [
+            "PO vs goods receipt vs invoice matching",
+            "Exception handling for mismatches",
+            "ERP and accounting synchronization"
+          ],
+          "result": "Pay right the first time — no leakage, full audit trail.",
+          "image": "/png/6.png"
+        }
+      ]
+    },
+    {
+      "slug": "vendor-management",
+      "title": "Vendor Management",
+      "tagline": "Complete vendor lifecycle from invitation to archival",
+      "description": "Centralized vendor database with performance tracking — covering self-registration, onboarding, compliance, approvals, categorization, monitoring and exit.",
+      "icon": "🤝",
+      "link": "/services/vendor-management",
+      "sections": [
+        {
+          "num": "01",
+          "title": "Vendor Invitation & Self-Registration",
+          "description": "Vendors register themselves through a secure portal.",
+          "points": [
+            "Invitation-based or open self-registration",
+            "Category and geography mapping",
+            "Duplicate vendor prevention"
+          ],
+          "result": "Faster onboarding with zero manual data entry.",
+          "image": "/atilaimages/vendorinvitation.png"
+        },
+        {
+          "num": "02",
+          "title": "Vendor Profile Creation",
+          "description": "Vendors maintain accurate and standardized profiles.",
+          "points": [
+            "Company details",
+            "GST / PAN / MSME",
+            "Bank and contact information",
+            "Product and service mapping"
+          ],
+          "result": "Clean, audit-ready vendor master.",
+          "image": "/atilaimages/vendorregistration.png"
+        },
+        {
+          "num": "03",
+          "title": "Document Upload & Compliance Management",
+          "description": "Ensure statutory and internal compliance from day one.",
+          "points": [
+            "GST, PAN, bank proof, certifications",
+            "Mandatory and optional document controls",
+            "Expiry date tracking"
+          ],
+          "result": "No missing or expired documents.",
+          "image": "/atilaimages/vendorlist.png"
+        },
+        {
+          "num": "04",
+          "title": "Automated Validation & Risk Checks",
+          "description": "ATILA performs system-driven validations to reduce risk.",
+          "points": [
+            "Duplicate GST/PAN detection",
+            "Mandatory document validation",
+            "Optional sanctions or blacklist screening"
+          ],
+          "result": "Reduced fraud and compliance risk.",
+          "image": "/atilaimages/vendorworkflow.png"
+        },
+        {
+          "num": "05",
+          "title": "Multi-Level Approval Workflow",
+          "description": "Configurable approval flows ensure governance without delays.",
+          "points": [
+            "Procurement, Finance, Compliance approvals",
+            "SLA-based reminders",
+            "Rework and rejection with comments"
+          ],
+          "result": "Transparent, traceable approvals.",
+          "image": "/atilaimages/vendorDashboard.png"
+        },
+        {
+          "num": "06",
+          "title": "Vendor Activation & ERP Sync",
+          "description": "Once approved, vendors become transaction-ready.",
+          "points": [
+            "Vendor status set to Active / De-active / Block / Blacklist",
+            "Eligible for RFQs, POs, and invoices",
+            "Optional ERP integration (SAP, Oracle, etc.)"
+          ],
+          "result": "One source of truth for vendor data.",
+          "image": "/atilaimages/vendorinvitation.png"
+        },
+        {
+          "num": "07",
+          "title": "Vendor Categorization & Classification",
+          "description": "Segment vendors strategically.",
+          "points": [
+            "Approved / Preferred / Strategic",
+            "High-risk / Low-risk",
+            "MSME / Non-MSME",
+            "Material / Service / Capex"
+          ],
+          "result": "Smarter sourcing and spend control.",
+          "image": "/atilaimages/vendorlist.png"
+        },
+        {
+          "num": "08",
+          "title": "Continuous Compliance Monitoring",
+          "description": "ATILA ensures compliance is ongoing—not one-time.",
+          "points": [
+            "Document expiry alerts",
+            "Auto-notifications to vendors",
+            "Temporary blocking for non-compliance"
+          ],
+          "result": "Always audit-ready vendor ecosystem.",
+          "image": "/atilaimages/vendorworkflow.png"
+        },
+        {
+          "num": "09",
+          "title": "Vendor Exit & Archival",
+          "description": "Control vendor suspension or exit with full audit trail.",
+          "points": [
+            "Temporary suspension",
+            "Blacklisting",
+            "Inactive vendor archival",
+            "ERP synchronization"
+          ],
+          "result": "Clean vendor database, no clutter.",
+          "image": "/atilaimages/vendorDashboard.png"
+        }
+      ]
+    },
+    {
+      "slug": "contract-management",
+      "title": "Contract Management",
+      "tagline": "Digital contract lifecycle management",
+      "description": "Digitize the full contract lifecycle — authoring, negotiation, approval, storage, tracking and renewal — so contracts never become a black box.",
+      "icon": "📝",
+      "link": "/services/contract-management",
+      "sections": [
+        {
+          "num": "01",
+          "title": "Contract Initiation",
+          "description": "Start from an approved template or an uploaded agreement.",
+          "points": [
+            "Request or create from the clause library",
+            "Key metadata captured — party, value, term",
+            "Suggested approval path and risk flags"
+          ],
+          "result": "Every contract starts standardized.",
+          "image": "/png/7.png"
+        },
+        {
+          "num": "02",
+          "title": "Authoring & Clause Library",
+          "description": "Build contracts with approved, reusable clauses.",
+          "points": [
+            "Pre-approved clause library",
+            "Fallback and negotiable clause marking",
+            "Versioned drafts"
+          ],
+          "result": "Legal-safe contracts, produced faster.",
+          "image": "/png/8.png"
+        },
+        {
+          "num": "03",
+          "title": "Review & Negotiation",
+          "description": "Collaborate with internal and external stakeholders in one workspace.",
+          "points": [
+            "Side-by-side redlines and comments",
+            "Dedicated negotiation workspace",
+            "Clean approval hand-offs"
+          ],
+          "result": "Fewer email threads and clearer decisions.",
+          "image": "/png/9.png"
+        },
+        {
+          "num": "04",
+          "title": "Approval & E-Signature",
+          "description": "Route for approval and execute digitally.",
+          "points": [
+            "Multi-level approval workflows",
+            "Electronic signature capture",
+            "Auto-archiving of the executed copy"
+          ],
+          "result": "Fully executed, audit-ready agreements.",
+          "image": "/png/10.png"
+        },
+        {
+          "num": "05",
+          "title": "Central Repository & Version Control",
+          "description": "Store contracts with metadata and complete history.",
+          "points": [
+            "Searchable central contract repository",
+            "Version and access control",
+            "Related documents linked"
+          ],
+          "result": "No more black-box or lost contracts.",
+          "image": "/png/11.png"
+        },
+        {
+          "num": "06",
+          "title": "Obligation, Renewal & Expiry Tracking",
+          "description": "Track obligations, milestones and renewals automatically.",
+          "points": [
+            "Obligation and milestone tracking",
+            "Renewal and expiry alerts",
+            "Clause-level reminders"
+          ],
+          "result": "No missed renewals or expired agreements.",
+          "image": "/png/12.png"
+        }
+      ]
+    },
+    {
+      "slug": "spend-analytics",
+      "title": "Spend Analytics",
+      "tagline": "Real-time spending insights",
+      "description": "Turn procurement data into decisions with real-time dashboards, category intelligence and supplier insights that uncover savings opportunities.",
+      "icon": "📈",
+      "link": "/services/spend-analytics",
+      "sections": [
+        {
+          "num": "01",
+          "title": "Data Consolidation",
+          "description": "Bring procurement data together from across systems.",
+          "points": [
+            "PO, invoice and contract data sources",
+            "ERP and third-party integrations",
+            "Automated ingestion and cleansing"
+          ],
+          "result": "One trusted source of spend truth.",
+          "image": "/png/13.png"
+        },
+        {
+          "num": "02",
+          "title": "Spend Classification & Enrichment",
+          "description": "Automatically classify and enrich every spend record.",
+          "points": [
+            "Category, supplier and cost-center mapping",
+            "Commodity coding",
+            "Deduplication and normalization"
+          ],
+          "result": "Clean, comparable spend data.",
+          "image": "/png/14.png"
+        },
+        {
+          "num": "03",
+          "title": "Real-Time Dashboards",
+          "description": "Monitor spend at a glance and drill into detail.",
+          "points": [
+            "Executive and operational dashboards",
+            "Drill-down to transaction level",
+            "Filter by category, supplier or business unit"
+          ],
+          "result": "Live spend visibility for every stakeholder.",
+          "image": "/png/15.png"
+        },
+        {
+          "num": "04",
+          "title": "Category & Supplier Intelligence",
+          "description": "Uncover the insights that improve sourcing decisions.",
+          "points": [
+            "Spend concentration analysis",
+            "Price and unit-cost trends",
+            "Supplier performance context"
+          ],
+          "result": "Sharper negotiations and sourcing strategies.",
+          "image": "/png/16.png"
+        },
+        {
+          "num": "05",
+          "title": "Savings Opportunity Identification",
+          "description": "Find and quantify where money can be saved.",
+          "points": [
+            "Maverick spend detection",
+            "Consolidation and compliance gaps",
+            "Should-cost vs actual comparisons"
+          ],
+          "result": "A concrete, prioritized pipeline of savings.",
+          "image": "/png/17.png"
+        },
+        {
+          "num": "06",
+          "title": "Forecasting & Reporting",
+          "description": "Plan ahead and report procurement impact.",
+          "points": [
+            "Budget vs actual tracking",
+            "Spend forecasts and trend analysis",
+            "Exportable reports for stakeholder reviews"
+          ],
+          "result": "Data-driven decisions with measurable impact.",
+          "image": "/png/18.png"
+        }
+      ]
+    },
+    {
+      "slug": "approval-workflows",
+      "title": "Approval Workflows",
+      "tagline": "Configurable multi-level approvals",
+      "description": "Build governed, configurable approval workflows across requisitions, purchase orders, contracts, invoices and vendors — with SLAs, escalations and full audit trails.",
+      "icon": "✅",
+      "link": "/services/approval-workflows",
+      "sections": [
+        {
+          "num": "01",
+          "title": "Visual Workflow Builder",
+          "description": "Create approval flows without writing code.",
+          "points": [
+            "Drag-and-drop workflow builder",
+            "Approver steps and conditions",
+            "Assign to roles, not just people"
+          ],
+          "result": "Policy configured in hours, not weeks.",
+          "image": "/png/19.png"
+        },
+        {
+          "num": "02",
+          "title": "Policy-Based Routing",
+          "description": "Route every request according to business rules.",
+          "points": [
+            "Rules on amount, category and risk",
+            "Parallel and sequential approval steps",
+            "Conditional branching"
+          ],
+          "result": "Right requests reach the right approvers automatically.",
+          "image": "/png/20.png"
+        },
+        {
+          "num": "03",
+          "title": "Approve from Anywhere",
+          "description": "Act on approvals with full context on any device.",
+          "points": [
+            "Mobile and email approvals",
+            "Attachments and comments in view",
+            "One-tap approve or reject"
+          ],
+          "result": "Faster decisions, no bottlenecks.",
+          "image": "/png/21.png"
+        },
+        {
+          "num": "04",
+          "title": "Delegation & Substitution",
+          "description": "Keep flows moving when people are away.",
+          "points": [
+            "Delegate and substitute approvers",
+            "Non-decision reviewer roles",
+            "Leave and availability handling"
+          ],
+          "result": "No stalled approvals during absence.",
+          "image": "/png/22.png"
+        },
+        {
+          "num": "05",
+          "title": "SLA Reminders & Escalations",
+          "description": "Enforce turnaround times on every step.",
+          "points": [
+            "SLA set per approval step",
+            "Automated reminders",
+            "Escalation to alternate approvers"
+          ],
+          "result": "Service levels are met consistently.",
+          "image": "/png/1.png"
+        },
+        {
+          "num": "06",
+          "title": "Complete Audit Trail",
+          "description": "Record every decision with full traceability.",
+          "points": [
+            "Timestamped decisions and comments",
+            "Complete revision history",
+            "Exportable audit reports"
+          ],
+          "result": "Transparent, traceable governance.",
+          "image": "/png/2.png"
+        }
+      ]
+    },
+    {
+      "slug": "compliance",
+      "title": "Compliance",
+      "tagline": "Procurement policy compliance",
+      "description": "Enforce procurement policies end-to-end — from purchase compliance and documentation to vendor compliance and regulatory reporting.",
+      "icon": "🛡️",
+      "link": "/services/compliance",
+      "sections": [
+        {
+          "num": "01",
+          "title": "Encode Procurement Policies",
+          "description": "Turn your policies into enforceable system rules.",
+          "points": [
+            "Policy-aware purchase and approval routing",
+            "Configurable control thresholds",
+            "Policy versioning and change control"
+          ],
+          "result": "Policies are enforced, not just published.",
+          "image": "/png/3.png"
+        },
+        {
+          "num": "02",
+          "title": "Pre-Transaction Compliance Checks",
+          "description": "Validate transactions before money moves.",
+          "points": [
+            "Mandatory document and certification checks",
+            "Budget and delegation validation",
+            "Regulatory checks — GST, MSME, sanctions"
+          ],
+          "result": "Non-compliant requests are stopped early.",
+          "image": "/png/4.png"
+        },
+        {
+          "num": "03",
+          "title": "Document & Certification Validation",
+          "description": "Make sure required proofs are present and current.",
+          "points": [
+            "Mandatory and optional document controls",
+            "Expiry and renewal tracking",
+            "Automatic notifications to owners"
+          ],
+          "result": "No missing or expired documents.",
+          "image": "/png/5.png"
+        },
+        {
+          "num": "04",
+          "title": "Vendor & Regulatory Screening",
+          "description": "Screen vendors continuously, not just at onboarding.",
+          "points": [
+            "GST / PAN validation and duplicate detection",
+            "Sanctions and blacklist screening",
+            "Risk classification of vendors"
+          ],
+          "result": "Reduced fraud and compliance risk.",
+          "image": "/png/6.png"
+        },
+        {
+          "num": "05",
+          "title": "Exception & Blacklist Management",
+          "description": "Handle exceptions and control blocked suppliers.",
+          "points": [
+            "Exception flagging and review routing",
+            "Blocked-supplier management",
+            "Temporary suspension and archival"
+          ],
+          "result": "Controlled risk with a clean vendor master.",
+          "image": "/png/7.png"
+        },
+        {
+          "num": "06",
+          "title": "Dashboards & Audit Reporting",
+          "description": "Prove compliance to auditors with evidence.",
+          "points": [
+            "Compliance dashboards and drill-downs",
+            "Role-based access and data security",
+            "Exportable audit evidence"
+          ],
+          "result": "Simpler, faster and more confident audits.",
+          "image": "/png/8.png"
+        }
+      ]
+    }
+  ]
+}

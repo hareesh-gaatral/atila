@@ -1,0 +1,16 @@
+{
+  "registry": [
+    { "sectionType": "testimonials", "component": "TestimonialsSection" },
+    { "sectionType": "faq", "component": "FAQSection" },
+    { "sectionType": "hero", "component": "hero" },
+    { "sectionType": "text", "component": "text" },
+    { "sectionType": "banner", "component": "banner" },
+    { "sectionType": "services", "component": "cards" },
+    { "sectionType": "features", "component": "cards" },
+    { "sectionType": "default", "component": "default" }
+  ],
+  "defaultContent": {
+    "title": "Section",
+    "content": "This section is under construction."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "logo": "/png/productLogo.png",
+  "logoAlt": "ATILA",
+  "navItems": [
+    { "id": "home", "label": "Home", "href": "/" },
+    { "id": "about", "label": "About", "href": "/#about" },
+    { "id": "services", "label": "Services", "href": "/#services" },
+    { "id": "faq", "label": "FAQ", "href": "/#faq" },
+    { "id": "contact", "label": "Contact", "href": "/#contact" }
+  ],
+  "scrollSpySections": ["about", "services", "testimonials", "faq", "contact"],
+  "adminLabel": "Admin Panel",
+  "adminHref": "/admin",
+  "dropdownCloseDelay": 180
+}

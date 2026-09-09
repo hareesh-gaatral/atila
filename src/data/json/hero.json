@@ -1,0 +1,24 @@
+{
+  "subtitle": "Procurement Platform",
+  "heading": {
+    "brand": "ATILA - ",
+    "highlight": "Intelligent Procurement",
+    "subtext": "for Modern Enterprises"
+  },
+  "paragraph": {
+    "text": "Built by Aatral Technologies, ATILA reflects real-world enterprise procurement challenges and best practices delivered through a modern, secure SaaS platform.",
+    "highlight": "Aatral Technologies"
+  },
+  "buttonText": "Schedule",
+  "buttonLink": "/contact",
+  "button2Text": "Talk to Expert",
+  "button2Link": "/contact",
+  "imageUrl": "",
+  "displayImage": "/png/atilaHome.png",
+  "displayImageAlt": "ATILA Platform",
+  "stats": [
+    { "value": "500+", "label": "Enterprises" },
+    { "value": "99.9%", "label": "Uptime" },
+    { "value": "2B+%", "label": "Procured" }
+  ]
+}

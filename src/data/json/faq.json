@@ -1,0 +1,26 @@
+{
+  "title": "Frequently Asked Questions",
+  "subtitle": "FAQ",
+  "items": [
+    {
+      "title": "How does ATILA help reduce procurement cycle time?",
+      "description": "ATILA automates approvals, three-way matching and document workflows, so requisitions to paid orders move in days instead of weeks — with full visibility at every step."
+    },
+    {
+      "title": "Is ATILA suitable for small and mid-sized businesses?",
+      "description": "Yes. ATILA scales from SMBs to large enterprises, with configurable workflows, role-based access and pricing tiers that match your procurement maturity."
+    },
+    {
+      "title": "Can ATILA integrate with our existing ERP or accounting system?",
+      "description": "ATILA offers API-based and file-based integrations with popular ERPs such as SAP and Oracle, plus inventory and accounting systems, keeping a single source of truth."
+    },
+    {
+      "title": "How secure is our data on the ATILA platform?",
+      "description": "ATILA is built with bank-level security — encrypted data at rest and in transit, role-based access control, full audit trails and compliance-ready reporting."
+    },
+    {
+      "title": "How long does vendor onboarding take with ATILA?",
+      "description": "With self-registration, automated validations and digital approvals, vendors can be onboarded and activated in a matter of days — with zero manual data entry."
+    }
+  ]
+}

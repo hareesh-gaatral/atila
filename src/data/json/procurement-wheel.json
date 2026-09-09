@@ -1,0 +1,78 @@
+{
+  "badge": "The ATILA Network Effect",
+  "title": "End-to-End ",
+  "highlight": "Procurement Lifecycle",
+  "logo": "/png/productLogo.png",
+  "stages": [
+    { "label": "Design", "color": "#1e3a5f", "angle": 0 },
+    { "label": "Source", "color": "#14b8a6", "angle": 45 },
+    { "label": "Procure", "color": "#2c5282", "angle": 90 },
+    { "label": "Pay", "color": "#0d9488", "angle": 135 },
+    { "label": "Invoice", "color": "#1e3a5f", "angle": 180 },
+    { "label": "Fulfill", "color": "#14b8a6", "angle": 225 },
+    { "label": "Create", "color": "#2c5282", "angle": 270 },
+    { "label": "Quote", "color": "#0d9488", "angle": 315 }
+  ],
+  "buyers": {
+    "title": "Buyers",
+    "headline": "Spend smarter at every step",
+    "description": "Level up visibility into your spend. See what's changing across categories and suppliers, benchmark performance against your peers, and surface risk before it becomes a problem.",
+    "cards": [
+      {
+        "title": "Total Spend Visibility",
+        "description": "Track every purchase by category, department and supplier from one live, always-current dashboard."
+      },
+      {
+        "title": "Category Intelligence",
+        "description": "Understand shifting demand and pricing trends across your categories before they hit the bottom line."
+      },
+      {
+        "title": "Risk, Flagged Early",
+        "description": "Supplier and category risk surfaced early, with clear next actions your team can act on immediately."
+      },
+      {
+        "title": "Benchmark Your Spend",
+        "description": "Compare procurement performance against industry peers and close the gap where it matters most."
+      }
+    ],
+    "linkText": "Learn More",
+    "link": "/about"
+  },
+  "suppliers": {
+    "title": "Suppliers",
+    "headline": "Grow revenue on the network",
+    "description": "Get in front of more customers. See what's in demand on the network and align your offerings to maximize sales. Get paid faster all while offering a seamless experience that drives repeat business.",
+    "cards": [
+      {
+        "title": "Live Demand Signals",
+        "description": "See what buyers are sourcing right now and tune your catalogue and capacity to match."
+      },
+      {
+        "title": "Win More Work",
+        "description": "Get discovered in more sourcing events and respond with qualified bids in minutes, not days."
+      },
+      {
+        "title": "Get Paid Faster",
+        "description": "Automated invoicing and settlement that shorten your cash-conversion cycle and improve cash flow."
+      },
+      {
+        "title": "Earn Repeat Orders",
+        "description": "A frictionless transaction experience that keeps buyers coming back and drives repeat business."
+      }
+    ],
+    "linkText": "Learn More",
+    "link": "/about"
+  },
+  "ringLabels": {
+    "top": "BUYERS",
+    "bottom": "VALUE EXCHANGE",
+    "left": "DATA",
+    "right": "INSIGHTS"
+  },
+  "tags": [
+    "Procure to Pay (P2P)",
+    "Order to Cash (O2C)",
+    "ERP Integration",
+    "Source to Pay (S2P)"
+  ]
+}

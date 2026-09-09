@@ -1,0 +1,26 @@
+{
+  "title": "Contact Us",
+  "subtitle": "Get In Touch",
+  "content": "Our procurement experts are ready to help.",
+  "heading": "Get In Touch",
+  "formHeading": "Send Us a Message",
+  "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.596168904294!2d77.6345!3d12.9116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1497c1e6c96d%3A0x502a35af3de9c70!2sHSR+Layout%2C+Bengaluru%2C+Karnataka!5e0!3m2!1sen!2sin!4v1690000000000!5m2!1sen!2sin",
+  "defaults": {
+    "email": "atila@aatraltechnologies.com",
+    "phone": "91-8884481234",
+    "address": "#225, 1st floor, 13th Cross, 17th B Main Rd, 4th Sector, HSR Layout, Bangalore, Karnataka - 560102"
+  },
+  "infoCards": [
+    { "label": "Address", "type": "address" },
+    { "label": "Call Us", "type": "phone" },
+    { "label": "Email Us", "type": "email" }
+  ],
+  "form": {
+    "name": { "label": "Full Name", "placeholder": "John Doe" },
+    "email": { "label": "Email Address", "placeholder": "john@company.com" },
+    "phone": { "label": "Phone Number", "placeholder": "+91 98765 43210" },
+    "message": { "label": "Message", "placeholder": "Tell us about your procurement needs..." },
+    "submitText": "Send Message",
+    "successText": "Message Sent!"
+  }
+}

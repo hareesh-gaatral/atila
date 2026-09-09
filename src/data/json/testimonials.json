@@ -1,0 +1,30 @@
+{
+  "title": "What Our Clients Say",
+  "subtitle": "Testimonials",
+  "items": [
+    {
+      "title": "Ravi Sharma",
+      "designation": "Chief Procurement Officer, TechCorp",
+      "description": "ATILA transformed our procurement process. What used to take weeks now takes days, with complete visibility and control.",
+      "rating": 5
+    },
+    {
+      "title": "Priya Nair",
+      "designation": "VP Operations, BuildRight",
+      "description": "The vendor management capabilities are outstanding. Onboarding used to be painful — now it is fully automated and audit-ready.",
+      "rating": 5
+    },
+    {
+      "title": "Arjun Mehta",
+      "designation": "Finance Director, GlobalTrade",
+      "description": "Spend analytics gave us insights we never had. We identified savings of over 12% in the first year alone.",
+      "rating": 5
+    },
+    {
+      "title": "Sneha Kulkarni",
+      "designation": "Procurement Lead, MedSupply",
+      "description": "Compliance is effortless with ATILA. Every purchase follows policy, and audits are a breeze with the full trail.",
+      "rating": 4
+    }
+  ]
+}
