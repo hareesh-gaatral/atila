@@ -100,7 +100,7 @@
             "Duplicate vendor prevention"
           ],
           "result": "Faster onboarding with zero manual data entry.",
-          "image": "/atilaImages/vendorinvitation.png"
+          "image": "/atilaimages/vendorinvitation.png"
         },
         {
           "num": "02",
@@ -113,7 +113,7 @@
             "Product and service mapping"
           ],
           "result": "Clean, audit-ready vendor master.",
-          "image": "/atilaImages/vendorregistration.png"
+          "image": "/atilaimages/vendorregistration.png"
         },
         {
           "num": "03",
@@ -125,7 +125,7 @@
             "Expiry date tracking"
           ],
           "result": "No missing or expired documents.",
-          "image": "/atilaImages/vendorlist.png"
+          "image": "/atilaimages/vendorlist.png"
         },
         {
           "num": "04",
@@ -137,7 +137,7 @@
             "Optional sanctions or blacklist screening"
           ],
           "result": "Reduced fraud and compliance risk.",
-          "image": "/atilaImages/vendorworkflow.png"
+          "image": "/atilaimages/vendorworkflow.png"
         },
         {
           "num": "05",
@@ -149,7 +149,7 @@
             "Rework and rejection with comments"
           ],
           "result": "Transparent, traceable approvals.",
-          "image": "/atilaImages/vendorDashboard.png"
+          "image": "/atilaimages/vendorDashboard.png"
         },
         {
           "num": "06",
@@ -161,7 +161,7 @@
             "Optional ERP integration (SAP, Oracle, etc.)"
           ],
           "result": "One source of truth for vendor data.",
-          "image": "/atilaImages/vendorinvitation.png"
+          "image": "/atilaimages/vendorinvitation.png"
         },
         {
           "num": "07",
@@ -174,7 +174,7 @@
             "Material / Service / Capex"
           ],
           "result": "Smarter sourcing and spend control.",
-          "image": "/atilaImages/vendorlist.png"
+          "image": "/atilaimages/vendorlist.png"
         },
         {
           "num": "08",
@@ -186,7 +186,7 @@
             "Temporary blocking for non-compliance"
           ],
           "result": "Always audit-ready vendor ecosystem.",
-          "image": "/atilaImages/vendorworkflow.png"
+          "image": "/atilaimages/vendorworkflow.png"
         },
         {
           "num": "09",
@@ -199,7 +199,7 @@
             "ERP synchronization"
           ],
           "result": "Clean vendor database, no clutter.",
-          "image": "/atilaImages/vendorDashboard.png"
+          "image": "/atilaimages/vendorDashboard.png"
         }
       ]
     },
