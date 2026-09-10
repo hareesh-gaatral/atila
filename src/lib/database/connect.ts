@@ -25,9 +25,10 @@ export async function connectDB(): Promise<typeof mongoose> {
   if (!cached.promise) {
     const opts = {
       bufferCommands: false,
-      // Fail fast when MongoDB is unreachable so server components can fall
-      // back to JSON defaults (and `next build` does not hang).
-      serverSelectionTimeoutMS: 5000,
+      // Longer timeout for Vercel cold starts; fail fast enough that
+      // server components can fall back to JSON defaults.
+      serverSelectionTimeoutMS: 10000,
+      connectTimeoutMS: 10000,
     };
     cached.promise = mongoose.connect(MONGODB_URI, opts);
   }
