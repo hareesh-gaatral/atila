@@ -268,7 +268,12 @@ async function seedServices(db) {
       created += 1;
     }
   }
-  return { created, updated, total: catalog.length };
+  // Remove services that are no longer in the catalog (e.g. deleted services)
+  const catalogSlugs = catalog.map((item) => slugify(item.slug || item.title));
+  const deleteResult = await coll.deleteMany({ slug: { $nin: catalogSlugs } });
+  const deleted = deleteResult.deletedCount || 0;
+
+  return { created, updated, deleted, total: catalog.length };
 }
 
 async function seed() {
@@ -291,8 +296,8 @@ async function seed() {
     summary.push(`settings: ${settingCount} imported`);
 
     const serviceResult = await seedServices(db);
-    console.log(`${'services'.padEnd(18)} ${serviceResult.created} created, ${serviceResult.updated} updated`);
-    summary.push(`services: ${serviceResult.created} created, ${serviceResult.updated} updated`);
+    console.log(`${'services'.padEnd(18)} ${serviceResult.created} created, ${serviceResult.updated} updated, ${serviceResult.deleted} deleted`);
+    summary.push(`services: ${serviceResult.created} created, ${serviceResult.updated} updated, ${serviceResult.deleted} deleted`);
 
     const pageAction = await ensureHomePage(db);
     console.log(`home page (pages)      ${pageAction}`);
