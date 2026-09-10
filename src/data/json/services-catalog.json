@@ -207,81 +207,105 @@
       "slug": "order-to-cash",
       "title": "O2C - Order to Cash Cycle",
       "tagline": "End-to-end order-to-cash automation",
-      "description": "Automate the entire order-to-cash cycle — from sales order creation through delivery and invoicing — to accelerate cash collection and reduce DSO.",
+      "description": "Automate the entire order-to-cash cycle — from customer inquiry through payment collection — to accelerate cash flow, reduce DSO and improve customer satisfaction.",
       "icon": "💰",
       "link": "/services/order-to-cash",
       "sections": [
         {
           "num": "01",
-          "title": "Sales Order Management",
-          "description": "Capture and process sales orders efficiently.",
+          "title": "Customer Inquiry",
+          "description": "Capture customer requirements, products, quantities, specifications and expected delivery dates. Convert qualified inquiries into quotations.",
           "points": [
-            "Multi-channel order intake — EDI, portal, email",
-            "Auto-validation of pricing, terms and inventory",
-            "Order confirmation and ACK automation"
+            "Multi-channel inquiry capture — web, email, phone",
+            "Auto-enrichment with customer history",
+            "Inquiry-to-quotation conversion"
           ],
-          "result": "Faster order processing with fewer errors.",
-          "image": "/png/7.png"
+          "result": "No lead falls through the cracks.",
+          "image": "/atilaimages/customerenquiry.png"
         },
         {
           "num": "02",
-          "title": "Credit Management",
-          "description": "Assess and monitor customer credit risk in real time.",
+          "title": "Customer Onboarding",
+          "description": "Digitally onboard customers with company details, GST/KYC documents, billing and shipping locations, contacts, payment terms and approval workflows.",
           "points": [
-            "Automated credit limit checks at order entry",
-            "Credit scoring and risk classification",
-            "Hold and release workflows for high-risk orders"
+            "Self-service onboarding portal",
+            "GST/KYC document upload and validation",
+            "Payment terms and credit limit setup"
           ],
-          "result": "Reduced bad debt and exposure.",
-          "image": "/png/8.png"
+          "result": "Faster onboarding, cleaner master data.",
+          "image": "/atilaimages/customeronboarding.png"
         },
         {
           "num": "03",
-          "title": "Order Fulfillment & Delivery",
-          "description": "Ensure timely and accurate delivery to customers.",
+          "title": "Quotation & Pricing",
+          "description": "Create quotations using approved product and customer-specific price lists. Manage discounts, taxes, validity periods and commercial terms.",
           "points": [
-            "Warehouse and logistics integration",
-            "Pick, pack and ship automation",
-            "Real-time delivery tracking and POD capture"
+            "Approved price list integration",
+            "Discount, tax and validity management",
+            "Version-controlled quotation drafts"
           ],
-          "result": "On-time delivery and happy customers.",
-          "image": "/png/9.png"
+          "result": "Accurate quotations, faster turnaround.",
+          "image": "/atilaimages/quotationandpricing.png"
         },
         {
           "num": "04",
-          "title": "Invoicing & Billing",
-          "description": "Generate accurate invoices and send them instantly.",
+          "title": "Sales Order Confirmation",
+          "description": "Convert accepted quotations or customer POs into confirmed sales orders. Validate item, quantity, pricing, delivery terms and approvals before confirmation.",
           "points": [
-            "Auto-invoice generation from delivery/POD data",
-            "E-invoicing and GST compliance",
-            "Dispute and deduction management"
+            "Quotation-to-order auto-conversion",
+            "PO validation and matching",
+            "Multi-level approval workflows"
           ],
-          "result": "Clean invoices, fewer disputes.",
-          "image": "/png/10.png"
+          "result": "Confirmed orders with zero ambiguity.",
+          "image": "/atilaimages/slaesorder.png"
         },
         {
           "num": "05",
-          "title": "Accounts Receivable",
-          "description": "Track and collect payments systematically.",
+          "title": "Order Scheduling",
+          "description": "Plan delivery schedules against confirmed orders based on requested dates and availability. Support multiple schedules and partial fulfillment.",
           "points": [
-            "Aging analysis and dunning automation",
-            "Payment matching and reconciliation",
-            "Customer statement generation"
+            "Date-based delivery scheduling",
+            "Partial fulfillment support",
+            "Real-time availability check"
           ],
-          "result": "Faster cash collection and lower DSO.",
-          "image": "/png/11.png"
+          "result": "Optimized delivery planning.",
+          "image": "/atilaimages/orderscheduling.png"
         },
         {
           "num": "06",
-          "title": "Reporting & Analytics",
-          "description": "Monitor O2C performance with real-time dashboards.",
+          "title": "Dispatch & Delivery",
+          "description": "Plan dispatch, capture transporter and vehicle details, track dispatched quantities and maintain delivery documentation and POD.",
           "points": [
-            "DSO trends and collection efficiency metrics",
-            "Revenue and margin analysis by segment",
-            "Audit trail and compliance reporting"
+            "Transporter and vehicle assignment",
+            "Dispatch documentation and POD capture",
+            "Real-time delivery tracking"
           ],
-          "result": "Data-driven decisions for finance teams.",
-          "image": "/png/12.png"
+          "result": "On-time delivery with proof.",
+          "image": "/atilaimages/dispatchanddelevery.png"
+        },
+        {
+          "num": "07",
+          "title": "Invoice Management",
+          "description": "Generate invoices against dispatched quantities with applicable taxes and commercial terms, and make invoices available to customers digitally.",
+          "points": [
+            "Auto-invoice from dispatch data",
+            "Tax and commercial term calculation",
+            "Digital invoice delivery to customers"
+          ],
+          "result": "Accurate invoices, faster payment.",
+          "image": "/atilaimages/invoicemanagement.png"
+        },
+        {
+          "num": "08",
+          "title": "Payment & Receivables",
+          "description": "Track invoice due dates, outstanding amounts, partial/full payments and overdue receivables until payment is received and reconciled.",
+          "points": [
+            "Aging analysis and dunning automation",
+            "Payment matching and reconciliation",
+            "Overdue receivables tracking"
+          ],
+          "result": "Lower DSO, healthier cash flow.",
+          "image": "/atilaimages/reportandanalasys.png"
         }
       ]
     },
