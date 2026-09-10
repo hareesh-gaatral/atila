@@ -11,6 +11,9 @@ ATILA is an Intelligent Procurement platform for Modern Enterprises, built by Aa
 src/
 ├── app/                    # Next.js App Router pages
 ├── components/             # Reusable UI components
+│   ├── frontend/           # Public section & interactive feature components
+│   └── ui/                 # Small primitive / generic UI controls
+├── styles/                 # Dedicated component stylesheets
 ├── lib/                    # Utilities, database, auth
 ├── models/                 # Mongoose models
 ├── store/                  # Redux state management
@@ -118,6 +121,22 @@ src/
 | **Labels** | BUYERS, VALUE EXCHANGE, DATA, INSIGHTS |
 
 **Purpose**: Visual representation of ATILA's procurement lifecycle (similar to Coupa)
+
+### VendorManagementProcessFlow.tsx
+| Feature | Description |
+|---------|-------------|
+| **Lifecycle Stages** | 9 end-to-end stages from Invitation to Offboarding |
+| **Animation** | Serpentine path flow with animated packet traversal & stage glow |
+| **Styling** | Isolated stylesheet in `src/styles/VendorManagementProcessFlow.css` |
+| **Responsive** | Serpentine 3x3 grid on desktop; single vertical rail on mobile |
+
+### O2CProcessFlow.tsx
+| Feature | Description |
+|---------|-------------|
+| **Lifecycle Stages** | 8 stages from Inquiry & RFQ to Payment Reconciliation |
+| **Animation** | Serpentine path flow matching Vendor Management architecture |
+| **Styling** | Isolated stylesheet in `src/styles/O2CProcessFlow.css` |
+| **Responsive** | Serpentine 3x3 grid on desktop; single vertical rail on mobile |
 
 ### MarqueeSection.tsx
 | Feature | Description |
