@@ -58,16 +58,14 @@ function WalkthroughRegion({ steps }: { steps: IServiceStep[] }) {
     <section className="py-16 bg-white dark:bg-[#0f172a] transition-colors duration-500">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-20">
-          {steps.map((section, i) => {
-            const imgSrc = toImageUrl(section.image);
-            return (
+          {steps.map((section, i) => (
             <div key={i} className="grid md:grid-cols-2 gap-12 items-center">
               {/* Image */}
               <div className={i % 2 === 1 ? 'md:order-2' : ''}>
-                {imgSrc ? (
+                {toImageUrl(section.image) ? (
                   <div className="relative rounded-2xl overflow-hidden shadow-xl border border-slate-200 dark:border-slate-700 group">
                     <img
-                      src={imgSrc}
+                      src={toImageUrl(section.image)}
                       alt={section.title || ''}
                       className="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-105"
                     />
@@ -121,8 +119,7 @@ function WalkthroughRegion({ steps }: { steps: IServiceStep[] }) {
                 )}
               </div>
             </div>
-          );
-          })}
+          ))}
         </div>
       </div>
     </section>
