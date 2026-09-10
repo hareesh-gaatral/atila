@@ -7,7 +7,7 @@ import { getServices, getSettings } from '@/lib/cache';
 export const metadata: Metadata = {
   title: 'Our Services | ATILA Procurement Platform',
   description:
-    'Explore ATILA procurement solutions — Purchase Management, Vendor Management, O2C - Order to Cash Cycle, Spend Analytics, Approval Workflows and Compliance.',
+    'Explore ATILA procurement solutions — Purchase Management, Vendor Management, O2C - Order to Cash Cycle and Approval Workflows.',
 };
 
 // ISR so a service added from the admin panel appears here (and a revalidatePath

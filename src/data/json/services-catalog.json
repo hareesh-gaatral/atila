@@ -3,82 +3,130 @@
     {
       "slug": "purchase-management",
       "title": "Purchase Management",
-      "tagline": "Streamline your entire procure-to-pay journey",
-      "description": "Streamlined purchase order creation and approval workflows that give procurement teams complete control over every purchase — from requisition to payment.",
+      "tagline": "End-to-end procure-to-pay automation",
+      "description": "Digitally onboard suppliers, create and approve purchase requisitions, manage RFQs and sourcing, issue POs, track deliveries, match invoices and automate payments — complete P2P lifecycle visibility.",
       "icon": "📋",
       "link": "/services/purchase-management",
       "sections": [
         {
           "num": "01",
-          "title": "Requisition & Budget Control",
-          "description": "Users raise purchase requisitions with full budget context.",
+          "title": "Vendor Onboarding & Management",
+          "description": "Digitally onboard, validate and manage suppliers through a structured registration, KYC, compliance and approval process. Build a centralized and reliable supplier master.",
           "points": [
-            "Online requisition with item, quantity and need-by date",
-            "Budget check and spend-limit enforcement",
-            "Automatic approval routing by amount and category"
+            "Supplier Registration",
+            "KYC & GST Validation",
+            "Document Management",
+            "Approval Workflow",
+            "Supplier Categorization",
+            "Supplier Master"
           ],
-          "result": "Right requests reach the right approvers, first time.",
-          "image": "/png/1.png"
+          "result": "Centralized, reliable supplier master.",
+          "image": "/atilaimages/procurevendoronboarding.png"
         },
         {
           "num": "02",
-          "title": "Purchase Order Creation",
-          "description": "Convert approved requisitions into purchase orders using configurable templates.",
+          "title": "Purchase Requisition (PR) Management",
+          "description": "Create, import, track and approve purchase requisitions with configurable workflows and budget controls. Provide procurement teams complete visibility into demand.",
           "points": [
-            "Configurable PO templates",
-            "Multi-line items, taxes and delivery terms",
-            "Auto-numbering and revision control"
+            "Material/Service PR",
+            "SAP PR Integration",
+            "Budget Validation",
+            "Maker–Checker Approval",
+            "PR Workbench",
+            "PR Ageing & Status Tracking"
           ],
-          "result": "Error-free purchase orders created in minutes.",
-          "image": "/png/2.png"
+          "result": "Full demand visibility for procurement teams.",
+          "image": "/atilaimages/procpurchaserequiation.png"
         },
         {
           "num": "03",
-          "title": "Multi-Level Approval Workflow",
-          "description": "Route POs through governed approvals with SLAs and full audit trails.",
+          "title": "RFQ & Strategic Sourcing",
+          "description": "Convert approved requirements into RFQs, invite qualified suppliers, receive quotations and identify the best commercial offer through structured comparison and sourcing.",
           "points": [
-            "Conditional approval chains",
-            "SLA-based reminders",
-            "Reject and rework with comments"
+            "RFQ Creation",
+            "Supplier Invitation",
+            "Quote Submission",
+            "Comparison Sheet",
+            "Negotiation",
+            "Award Recommendation"
           ],
-          "result": "Governance without bottlenecks.",
-          "image": "/png/3.png"
+          "result": "Best commercial offers through structured sourcing.",
+          "image": "/atilaimages/procurerfqstarrtegic.png"
         },
         {
           "num": "04",
-          "title": "Order Dispatch & Tracking",
-          "description": "Send purchase orders to vendors and keep everyone on the same page.",
+          "title": "Purchase Order (PO) Management",
+          "description": "Convert approved requisitions or sourcing awards into purchase orders with controlled approvals, commercial terms and complete order visibility.",
           "points": [
-            "PO shared instantly with the vendor",
-            "Real-time status — sent, accepted, shipped",
-            "Change and amendment tracking"
+            "PR/RFQ-to-PO Conversion",
+            "PO Approval",
+            "Standard/Subcontracting/Blanket PO",
+            "Terms & Conditions",
+            "PO Amendments",
+            "ERP Integration"
           ],
-          "result": "Buyers and vendors always know where an order stands.",
-          "image": "/png/4.png"
+          "result": "Controlled POs with full audit trail.",
+          "image": "/atilaimages/procpurchaseordermanagement.png"
         },
         {
           "num": "05",
-          "title": "Goods Receipt & Inspection",
-          "description": "Record receipts and verify that what arrived matches what was ordered.",
+          "title": "Order Confirmation & ASN",
+          "description": "Collaborate digitally with suppliers after PO release. Capture order acknowledgements and Advance Shipping Notices to improve visibility of upcoming deliveries.",
           "points": [
-            "Receipt against PO lines",
-            "Quantity and quality checks",
-            "Discrepancy capture"
+            "Supplier PO Acknowledgement",
+            "Accept/Reject/Request Change",
+            "ASN Creation",
+            "Shipment Details",
+            "Expected Delivery Date",
+            "SAP/ERP Integration"
           ],
-          "result": "Accurate stock and early problem detection.",
-          "image": "/png/5.png"
+          "result": "Upcoming delivery visibility for all stakeholders.",
+          "image": "/atilaimages/procasn.png"
         },
         {
           "num": "06",
-          "title": "Three-Way Match & Payment",
-          "description": "Automate invoice matching to close the procure-to-pay loop.",
+          "title": "Goods Receipt & Quality Management",
+          "description": "Track material receipt against purchase orders and perform inspection and quality checks to ensure supplied goods meet quantity and quality requirements.",
           "points": [
-            "PO vs goods receipt vs invoice matching",
-            "Exception handling for mismatches",
-            "ERP and accounting synchronization"
+            "GRN Tracking",
+            "Full/Partial Receipt",
+            "Inspection/QC",
+            "Accepted/Rejected Quantity",
+            "Non-Conformance",
+            "Supplier Performance Input"
           ],
-          "result": "Pay right the first time — no leakage, full audit trail.",
-          "image": "/png/6.png"
+          "result": "Quality assured receipts with performance tracking.",
+          "image": "/atilaimages/procgrn.png"
+        },
+        {
+          "num": "07",
+          "title": "Invoice Management & 3-Way Match",
+          "description": "Digitize supplier invoice processing and automatically validate invoices against purchase orders and goods receipts before posting for payment.",
+          "points": [
+            "Invoice Upload",
+            "OCR Invoice Capture",
+            "PO–GRN–Invoice 3-Way Match",
+            "GST Validation",
+            "Exception Handling",
+            "SAP/ERP Invoice Posting"
+          ],
+          "result": "Automated invoice validation, zero leakage.",
+          "image": "/atilaimages/invoice3waymatch.png"
+        },
+        {
+          "num": "08",
+          "title": "Payments, Analytics & Reporting",
+          "description": "Track invoice and payment status while providing procurement teams with real-time dashboards for spend, savings, supplier performance and operational KPIs.",
+          "points": [
+            "Payment Status",
+            "ERP Payment Integration",
+            "Spend Analytics",
+            "Savings Reports",
+            "Supplier Performance",
+            "Procurement Dashboard"
+          ],
+          "result": "Data-driven procurement decisions.",
+          "image": "/atilaimages/procpaymentandreporting.png"
         }
       ]
     },
@@ -310,88 +358,6 @@
       ]
     },
     {
-      "slug": "spend-analytics",
-      "title": "Spend Analytics",
-      "tagline": "Real-time spending insights",
-      "description": "Turn procurement data into decisions with real-time dashboards, category intelligence and supplier insights that uncover savings opportunities.",
-      "icon": "📈",
-      "link": "/services/spend-analytics",
-      "sections": [
-        {
-          "num": "01",
-          "title": "Data Consolidation",
-          "description": "Bring procurement data together from across systems.",
-          "points": [
-            "PO, invoice and contract data sources",
-            "ERP and third-party integrations",
-            "Automated ingestion and cleansing"
-          ],
-          "result": "One trusted source of spend truth.",
-          "image": "/png/13.png"
-        },
-        {
-          "num": "02",
-          "title": "Spend Classification & Enrichment",
-          "description": "Automatically classify and enrich every spend record.",
-          "points": [
-            "Category, supplier and cost-center mapping",
-            "Commodity coding",
-            "Deduplication and normalization"
-          ],
-          "result": "Clean, comparable spend data.",
-          "image": "/png/14.png"
-        },
-        {
-          "num": "03",
-          "title": "Real-Time Dashboards",
-          "description": "Monitor spend at a glance and drill into detail.",
-          "points": [
-            "Executive and operational dashboards",
-            "Drill-down to transaction level",
-            "Filter by category, supplier or business unit"
-          ],
-          "result": "Live spend visibility for every stakeholder.",
-          "image": "/png/15.png"
-        },
-        {
-          "num": "04",
-          "title": "Category & Supplier Intelligence",
-          "description": "Uncover the insights that improve sourcing decisions.",
-          "points": [
-            "Spend concentration analysis",
-            "Price and unit-cost trends",
-            "Supplier performance context"
-          ],
-          "result": "Sharper negotiations and sourcing strategies.",
-          "image": "/png/16.png"
-        },
-        {
-          "num": "05",
-          "title": "Savings Opportunity Identification",
-          "description": "Find and quantify where money can be saved.",
-          "points": [
-            "Maverick spend detection",
-            "Consolidation and compliance gaps",
-            "Should-cost vs actual comparisons"
-          ],
-          "result": "A concrete, prioritized pipeline of savings.",
-          "image": "/png/17.png"
-        },
-        {
-          "num": "06",
-          "title": "Forecasting & Reporting",
-          "description": "Plan ahead and report procurement impact.",
-          "points": [
-            "Budget vs actual tracking",
-            "Spend forecasts and trend analysis",
-            "Exportable reports for stakeholder reviews"
-          ],
-          "result": "Data-driven decisions with measurable impact.",
-          "image": "/png/18.png"
-        }
-      ]
-    },
-    {
       "slug": "approval-workflows",
       "title": "Approval Workflows",
       "tagline": "Configurable multi-level approvals",
@@ -470,88 +436,6 @@
           ],
           "result": "Transparent, traceable governance.",
           "image": "/png/2.png"
-        }
-      ]
-    },
-    {
-      "slug": "compliance",
-      "title": "Compliance",
-      "tagline": "Procurement policy compliance",
-      "description": "Enforce procurement policies end-to-end — from purchase compliance and documentation to vendor compliance and regulatory reporting.",
-      "icon": "🛡️",
-      "link": "/services/compliance",
-      "sections": [
-        {
-          "num": "01",
-          "title": "Encode Procurement Policies",
-          "description": "Turn your policies into enforceable system rules.",
-          "points": [
-            "Policy-aware purchase and approval routing",
-            "Configurable control thresholds",
-            "Policy versioning and change control"
-          ],
-          "result": "Policies are enforced, not just published.",
-          "image": "/png/3.png"
-        },
-        {
-          "num": "02",
-          "title": "Pre-Transaction Compliance Checks",
-          "description": "Validate transactions before money moves.",
-          "points": [
-            "Mandatory document and certification checks",
-            "Budget and delegation validation",
-            "Regulatory checks — GST, MSME, sanctions"
-          ],
-          "result": "Non-compliant requests are stopped early.",
-          "image": "/png/4.png"
-        },
-        {
-          "num": "03",
-          "title": "Document & Certification Validation",
-          "description": "Make sure required proofs are present and current.",
-          "points": [
-            "Mandatory and optional document controls",
-            "Expiry and renewal tracking",
-            "Automatic notifications to owners"
-          ],
-          "result": "No missing or expired documents.",
-          "image": "/png/5.png"
-        },
-        {
-          "num": "04",
-          "title": "Vendor & Regulatory Screening",
-          "description": "Screen vendors continuously, not just at onboarding.",
-          "points": [
-            "GST / PAN validation and duplicate detection",
-            "Sanctions and blacklist screening",
-            "Risk classification of vendors"
-          ],
-          "result": "Reduced fraud and compliance risk.",
-          "image": "/png/6.png"
-        },
-        {
-          "num": "05",
-          "title": "Exception & Blacklist Management",
-          "description": "Handle exceptions and control blocked suppliers.",
-          "points": [
-            "Exception flagging and review routing",
-            "Blocked-supplier management",
-            "Temporary suspension and archival"
-          ],
-          "result": "Controlled risk with a clean vendor master.",
-          "image": "/png/7.png"
-        },
-        {
-          "num": "06",
-          "title": "Dashboards & Audit Reporting",
-          "description": "Prove compliance to auditors with evidence.",
-          "points": [
-            "Compliance dashboards and drill-downs",
-            "Role-based access and data security",
-            "Exportable audit evidence"
-          ],
-          "result": "Simpler, faster and more confident audits.",
-          "image": "/png/8.png"
         }
       ]
     }
