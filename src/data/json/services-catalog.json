@@ -204,83 +204,83 @@
       ]
     },
     {
-      "slug": "contract-management",
-      "title": "Contract Management",
-      "tagline": "Digital contract lifecycle management",
-      "description": "Digitize the full contract lifecycle — authoring, negotiation, approval, storage, tracking and renewal — so contracts never become a black box.",
-      "icon": "📝",
-      "link": "/services/contract-management",
+      "slug": "order-to-cash",
+      "title": "O2C - Order to Cash Cycle",
+      "tagline": "End-to-end order-to-cash automation",
+      "description": "Automate the entire order-to-cash cycle — from sales order creation through delivery and invoicing — to accelerate cash collection and reduce DSO.",
+      "icon": "💰",
+      "link": "/services/order-to-cash",
       "sections": [
         {
           "num": "01",
-          "title": "Contract Initiation",
-          "description": "Start from an approved template or an uploaded agreement.",
+          "title": "Sales Order Management",
+          "description": "Capture and process sales orders efficiently.",
           "points": [
-            "Request or create from the clause library",
-            "Key metadata captured — party, value, term",
-            "Suggested approval path and risk flags"
+            "Multi-channel order intake — EDI, portal, email",
+            "Auto-validation of pricing, terms and inventory",
+            "Order confirmation and ACK automation"
           ],
-          "result": "Every contract starts standardized.",
+          "result": "Faster order processing with fewer errors.",
           "image": "/png/7.png"
         },
         {
           "num": "02",
-          "title": "Authoring & Clause Library",
-          "description": "Build contracts with approved, reusable clauses.",
+          "title": "Credit Management",
+          "description": "Assess and monitor customer credit risk in real time.",
           "points": [
-            "Pre-approved clause library",
-            "Fallback and negotiable clause marking",
-            "Versioned drafts"
+            "Automated credit limit checks at order entry",
+            "Credit scoring and risk classification",
+            "Hold and release workflows for high-risk orders"
           ],
-          "result": "Legal-safe contracts, produced faster.",
+          "result": "Reduced bad debt and exposure.",
           "image": "/png/8.png"
         },
         {
           "num": "03",
-          "title": "Review & Negotiation",
-          "description": "Collaborate with internal and external stakeholders in one workspace.",
+          "title": "Order Fulfillment & Delivery",
+          "description": "Ensure timely and accurate delivery to customers.",
           "points": [
-            "Side-by-side redlines and comments",
-            "Dedicated negotiation workspace",
-            "Clean approval hand-offs"
+            "Warehouse and logistics integration",
+            "Pick, pack and ship automation",
+            "Real-time delivery tracking and POD capture"
           ],
-          "result": "Fewer email threads and clearer decisions.",
+          "result": "On-time delivery and happy customers.",
           "image": "/png/9.png"
         },
         {
           "num": "04",
-          "title": "Approval & E-Signature",
-          "description": "Route for approval and execute digitally.",
+          "title": "Invoicing & Billing",
+          "description": "Generate accurate invoices and send them instantly.",
           "points": [
-            "Multi-level approval workflows",
-            "Electronic signature capture",
-            "Auto-archiving of the executed copy"
+            "Auto-invoice generation from delivery/POD data",
+            "E-invoicing and GST compliance",
+            "Dispute and deduction management"
           ],
-          "result": "Fully executed, audit-ready agreements.",
+          "result": "Clean invoices, fewer disputes.",
           "image": "/png/10.png"
         },
         {
           "num": "05",
-          "title": "Central Repository & Version Control",
-          "description": "Store contracts with metadata and complete history.",
+          "title": "Accounts Receivable",
+          "description": "Track and collect payments systematically.",
           "points": [
-            "Searchable central contract repository",
-            "Version and access control",
-            "Related documents linked"
+            "Aging analysis and dunning automation",
+            "Payment matching and reconciliation",
+            "Customer statement generation"
           ],
-          "result": "No more black-box or lost contracts.",
+          "result": "Faster cash collection and lower DSO.",
           "image": "/png/11.png"
         },
         {
           "num": "06",
-          "title": "Obligation, Renewal & Expiry Tracking",
-          "description": "Track obligations, milestones and renewals automatically.",
+          "title": "Reporting & Analytics",
+          "description": "Monitor O2C performance with real-time dashboards.",
           "points": [
-            "Obligation and milestone tracking",
-            "Renewal and expiry alerts",
-            "Clause-level reminders"
+            "DSO trends and collection efficiency metrics",
+            "Revenue and margin analysis by segment",
+            "Audit trail and compliance reporting"
           ],
-          "result": "No missed renewals or expired agreements.",
+          "result": "Data-driven decisions for finance teams.",
           "image": "/png/12.png"
         }
       ]

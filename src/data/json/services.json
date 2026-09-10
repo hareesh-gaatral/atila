@@ -5,7 +5,7 @@
   "items": [
     { "title": "Purchase Management", "description": "Streamlined purchase order creation and approval workflows", "icon": "📋" },
     { "title": "Vendor Management", "description": "Centralized vendor database with performance tracking", "icon": "🤝" },
-    { "title": "Contract Management", "description": "Digital contract lifecycle management", "icon": "📝" },
+    { "title": "O2C - Order to Cash Cycle", "description": "End-to-end order-to-cash automation", "icon": "💰" },
     { "title": "Spend Analytics", "description": "Real-time spending insights", "icon": "📈" },
     { "title": "Approval Workflows", "description": "Multi-level approvals", "icon": "✅" },
     { "title": "Compliance", "description": "Procurement policy compliance", "icon": "🛡️" }
