@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 export default function ContactButton() {
   const [isOpen, setIsOpen] = useState(false);
-  const phoneNumber = '91939258253';
+  const phoneNumber = '918884481234';
 
   return (
     <div className="fixed bottom-6 right-6 z-50">
