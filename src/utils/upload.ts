@@ -5,20 +5,48 @@ import { existsSync } from 'fs';
 import sharp from 'sharp';
 import { randomBytes } from 'crypto';
 
+const isVercel = !!process.env.VERCEL;
+
+async function uploadToCloudinary(
+  buffer: Buffer,
+  filename: string,
+  mimeType: string
+): Promise<{ url: string; path: string; filename: string }> {
+  const cloudinary = (await import('cloudinary')).v2;
+  cloudinary.config({
+    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+    api_key: process.env.CLOUDINARY_API_KEY,
+    api_secret: process.env.CLOUDINARY_API_SECRET,
+  });
+
+  const result = await new Promise<any>((resolve, reject) => {
+    const ext = filename.split('.').pop() || 'jpg';
+    const publicId = `atila-uploads/${Date.now()}-${Math.random().toString(36).substring(2, 8)}`;
+    cloudinary.uploader
+      .upload_stream(
+        { folder: 'atila-uploads', public_id: publicId, resource_type: 'auto' },
+        (error: any, result: any) => {
+          if (error) reject(error);
+          else resolve(result);
+        }
+      )
+      .end(buffer);
+  });
+
+  return {
+    url: result.secure_url,
+    path: result.public_id,
+    filename,
+  };
+}
+
 export async function saveFileLocally(
   file: Buffer,
   originalName: string,
   mimeType: string
 ): Promise<{ url: string; path: string; filename: string }> {
-  const uploadDir = process.env.UPLOAD_DIR || './public/uploads';
-
-  if (!existsSync(uploadDir)) {
-    await mkdir(uploadDir, { recursive: true });
-  }
-
   const ext = originalName.split('.').pop() || 'jpg';
   const filename = `${Date.now()}-${Math.random().toString(36).substring(2, 8)}.${ext}`;
-  const filepath = join(uploadDir, filename);
 
   let processedBuffer = file;
 
@@ -33,6 +61,17 @@ export async function saveFileLocally(
     }
   }
 
+  if (isVercel) {
+    return uploadToCloudinary(processedBuffer, filename, mimeType);
+  }
+
+  const uploadDir = process.env.UPLOAD_DIR || './public/uploads';
+
+  if (!existsSync(uploadDir)) {
+    await mkdir(uploadDir, { recursive: true });
+  }
+
+  const filepath = join(uploadDir, filename);
   await writeFile(filepath, processedBuffer);
 
   return {
