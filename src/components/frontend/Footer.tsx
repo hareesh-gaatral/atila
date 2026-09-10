@@ -33,8 +33,8 @@ export default function Footer({ settings }: FooterProps) {
 
   return (
     <footer className="bg-navy dark:bg-[#020617] text-white transition-colors duration-500">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="grid md:grid-cols-4 gap-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div className="grid md:grid-cols-4 gap-4">
           {/* Logo + Description */}
           <div className="md:col-span-2">
             <div className="mb-3">

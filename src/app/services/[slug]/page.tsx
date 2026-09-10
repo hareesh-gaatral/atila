@@ -243,14 +243,14 @@ function CtaRegion({ cta, title }: { cta: NonNullable<IServicePage['cta']>; titl
   const secondaryText = cta.secondaryText || 'Ask a Question';
   const secondaryHref = cta.secondaryHref || '/#contact';
   return (
-    <section className="py-16 bg-gradient-to-r from-navy to-[#1a3b5c]">
+    <section className="py-10 bg-gradient-to-r from-navy to-[#1a3b5c]">
       <div className="max-w-4xl mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">{heading}</h2>
-        {text && <p className="text-xl text-white/80 mb-8">{text}</p>}
+        <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">{heading}</h2>
+        {text && <p className="text-lg text-white/80 mb-6">{text}</p>}
         <div className="flex flex-wrap justify-center gap-4">
           <Link
             href={buttonHref}
-            className="inline-flex items-center gap-2 bg-teal-500 hover:bg-teal-600 dark:hover:bg-teal-400 text-white font-semibold px-8 py-4 rounded-lg transition-all"
+            className="inline-flex items-center gap-2 bg-teal-500 hover:bg-teal-600 dark:hover:bg-teal-400 text-white font-semibold px-6 py-3 rounded-lg transition-all"
           >
             {buttonText}
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -259,7 +259,7 @@ function CtaRegion({ cta, title }: { cta: NonNullable<IServicePage['cta']>; titl
           </Link>
           <Link
             href={secondaryHref}
-            className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-4 rounded-lg transition-all"
+            className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold px-6 py-3 rounded-lg transition-all"
           >
             {secondaryText}
           </Link>
