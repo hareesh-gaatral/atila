@@ -302,28 +302,28 @@ export default async function ServiceDetailPage({ params }: Props) {
       <Navbar settings={settings} />
       <main>
         {/* Hero */}
-        <section className="relative py-20 bg-gradient-to-br from-navy to-[#1a3b5c] dark:from-[#0f172a] dark:to-[#1e293b] overflow-hidden pt-32">
+        <section className="relative py-12 bg-gradient-to-br from-navy to-[#1a3b5c] dark:from-[#0f172a] dark:to-[#1e293b] overflow-hidden pt-24">
           <div className="absolute inset-0 opacity-10">
             <div className="absolute top-10 left-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>
             <div className="absolute bottom-10 right-10 w-96 h-96 bg-teal-400 rounded-full blur-3xl"></div>
           </div>
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <Link href="/services" className="inline-flex items-center gap-2 text-white/70 hover:text-white mb-6 transition">
+            <Link href="/services" className="inline-flex items-center gap-2 text-white/70 hover:text-white mb-4 transition">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
               All Services
             </Link>
-            <div className="flex items-start gap-5">
+            <div className="flex items-start gap-4">
               {service.icon && (
-                <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center flex-shrink-0">
-                  <span className="text-4xl">{service.icon}</span>
+                <div className="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center flex-shrink-0">
+                  <span className="text-3xl">{service.icon}</span>
                 </div>
               )}
               <div>
-                <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">{service.title}</h1>
-                {service.tagline && <p className="text-xl text-teal-300 dark:text-teal-400 font-semibold mb-3">{service.tagline}</p>}
-                <p className="text-lg text-white/80 max-w-2xl leading-relaxed">{service.description || service.shortDescription}</p>
+                <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">{service.title}</h1>
+                {service.tagline && <p className="text-lg text-teal-300 dark:text-teal-400 font-semibold mb-2">{service.tagline}</p>}
+                <p className="text-base text-white/80 max-w-2xl leading-relaxed">{service.description || service.shortDescription}</p>
               </div>
             </div>
           </div>
