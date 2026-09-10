@@ -5,7 +5,6 @@
   "items": [
     { "title": "Purchase Management", "description": "End-to-end procure-to-pay automation — from vendor onboarding to payment", "icon": "📋" },
     { "title": "Vendor Management", "description": "Centralized vendor database with performance tracking", "icon": "🤝" },
-    { "title": "O2C - Order to Cash Cycle", "description": "Automate the entire order-to-cash cycle — from customer inquiry through payment collection — to accelerate cash flow and reduce DSO", "icon": "💰" },
-    { "title": "Approval Workflows", "description": "Multi-level approvals", "icon": "✅" }
+    { "title": "O2C - Order to Cash Cycle", "description": "Automate the entire order-to-cash cycle — from customer inquiry through payment collection — to accelerate cash flow and reduce DSO", "icon": "💰" }
   ]
 }
