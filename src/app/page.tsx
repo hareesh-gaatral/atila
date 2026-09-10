@@ -70,7 +70,7 @@ export default async function HomePage() {
         {render('about')}
         {render('services')}
         {render('features')}
-        {render('testimonials')}
+        {/* {render('testimonials')} */}
         {render('faq')}
         {render('cta')}
         {render('contact')}
