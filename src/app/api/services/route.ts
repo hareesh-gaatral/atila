@@ -12,8 +12,8 @@ import { services as staticServices } from '@/data/services';
  *   GET  ?all=1   (admin)         -> every service (drafts + archived included)
  *   POST (admin)                  -> create a service
  *
- * Returns the static JSON catalog when MongoDB is unreachable so the
- * navbar dropdown and home-page cards still render.
+ * Falls back to the static JSON catalog when MongoDB is unreachable or
+ * returns no services, so the navbar dropdown and home-page cards always render.
  */
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
@@ -24,16 +24,30 @@ export async function GET(req: NextRequest) {
     if (!auth.authorized) return auth.response;
   }
 
+  let fallbackItems = staticServices as any[];
+  if (searchParams.get('menu') === '1') {
+    fallbackItems = fallbackItems.filter((s) => s.showInMenu !== false);
+  }
+
   try {
     const controller = new ServiceController();
-    return await controller.getAll(req);
-  } catch {
-    // DB unavailable — fall back to static catalog so the dropdown still works.
-    let items = staticServices as any[];
-    if (searchParams.get('menu') === '1') {
-      items = items.filter((s) => s.showInMenu !== false);
+    const res = await controller.getAll(req);
+
+    // If the controller returned an error or an empty list, use the static fallback.
+    if (res.status >= 400) {
+      return NextResponse.json({ success: true, data: fallbackItems });
     }
-    return NextResponse.json({ success: true, data: items });
+
+    const body = await res.clone().json();
+    if (body.success && Array.isArray(body.data) && body.data.length > 0) {
+      return res;
+    }
+
+    // Empty DB result — merge: static catalog so the dropdown always has items.
+    return NextResponse.json({ success: true, data: fallbackItems });
+  } catch {
+    // DB unavailable — fall back to static catalog.
+    return NextResponse.json({ success: true, data: fallbackItems });
   }
 }
 
