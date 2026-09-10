@@ -32,7 +32,7 @@ export default function Footer({ settings }: FooterProps) {
   };
 
   return (
-    <footer className="bg-navy dark:bg-[#020617] text-white transition-colors duration-500">
+    <footer className="bg-[#0a1929] dark:bg-[#020617] text-white transition-colors duration-500 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="grid md:grid-cols-4 gap-4">
           {/* Logo + Description */}

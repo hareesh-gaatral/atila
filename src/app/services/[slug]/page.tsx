@@ -243,7 +243,7 @@ function CtaRegion({ cta, title }: { cta: NonNullable<IServicePage['cta']>; titl
   const secondaryText = cta.secondaryText || 'Ask a Question';
   const secondaryHref = cta.secondaryHref || '/#contact';
   return (
-    <section className="py-10 bg-gradient-to-r from-navy to-[#1a3b5c]">
+    <section className="py-10 bg-gradient-to-r from-[#0f2744] to-[#1a3b5c] border-b border-white/10">
       <div className="max-w-4xl mx-auto px-4 text-center">
         <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">{heading}</h2>
         {text && <p className="text-lg text-white/80 mb-6">{text}</p>}
