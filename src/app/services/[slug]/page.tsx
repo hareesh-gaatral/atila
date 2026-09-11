@@ -6,6 +6,8 @@ import Navbar from '@/components/frontend/Navbar';
 import Footer from '@/components/frontend/Footer';
 import { getSettings, getServices, getServiceBySlug } from '@/lib/cache';
 import type { IService, IServicePage, IServiceStep } from '@/types';
+import VendorManagementProcessFlow from '@/components/frontend/VendorManagementProcessFlow';
+import O2CProcessFlow from '@/components/frontend/O2CProcessFlow';
 
 export const revalidate = 60;
 
@@ -277,14 +279,41 @@ export default async function ServiceDetailPage({ params }: Props) {
 
   if (!service) notFound();
 
+  // Support both DB shape (service.page.steps) and static catalog shape (service.sections)
   const page = service.page || {};
-  const order = Array.isArray(page.sections) && page.sections.length ? page.sections : (['steps', 'cta'] as any[]);
-  const steps = page.steps || [];
-  const keyPoints = page.keyPoints || [];
-  const benefits = page.benefits || [];
-  const features = page.features || [];
-  const howItWorks = page.howItWorks || [];
-  const cta = page.cta || {};
+  const steps: IServiceStep[] =
+    (Array.isArray(page.steps) && page.steps.length > 0)
+      ? page.steps
+      : ((service as any).sections || []);
+
+  const keyPoints: string[] =
+    (Array.isArray(page.keyPoints) && page.keyPoints.length > 0)
+      ? page.keyPoints
+      : ((service as any).keyPoints || []);
+
+  const benefits: string[] =
+    (Array.isArray(page.benefits) && page.benefits.length > 0)
+      ? page.benefits
+      : ((service as any).benefits || []);
+
+  const features: string[] =
+    (Array.isArray(page.features) && page.features.length > 0)
+      ? page.features
+      : ((service as any).features || []);
+
+  const howItWorks: string[] =
+    (Array.isArray(page.howItWorks) && page.howItWorks.length > 0)
+      ? page.howItWorks
+      : ((service as any).howItWorks || []);
+
+  const cta = (page.cta && Object.keys(page.cta).length > 0)
+    ? page.cta
+    : ((service as any).cta || {});
+
+  const order: string[] =
+    (Array.isArray(page.sections) && page.sections.length > 0 && typeof page.sections[0] === 'string')
+      ? page.sections
+      : (['steps', 'cta'] as string[]);
 
   // Each enabled region rendered in the admin-chosen order (page.sections).
   // Empty regions are skipped; the CTA renders once enabled.
@@ -330,7 +359,50 @@ export default async function ServiceDetailPage({ params }: Props) {
         </section>
 
         {/* Dynamic content regions — rendered in the admin-chosen order. */}
-        {order.map((type) => regions[type] || null)}
+        {order.map((type) => {
+          if (type === 'cta') {
+            return (
+              <div key={type}>
+                {params.slug === 'vendor-management' && (
+                  <section className="py-8 md:py-10 bg-white dark:bg-[#0f172a] transition-colors border-t border-slate-200 dark:border-slate-800">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                      <VendorManagementProcessFlow />
+                    </div>
+                  </section>
+                )}
+                {params.slug === 'order-to-cash' && (
+                  <section className="py-8 md:py-10 bg-white dark:bg-[#0f172a] transition-colors border-t border-slate-200 dark:border-slate-800">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                      <O2CProcessFlow />
+                    </div>
+                  </section>
+                )}
+                {regions[type]}
+              </div>
+            );
+          }
+          if (!regions[type]) return null;
+          return <div key={type}>{regions[type]}</div>;
+        })}
+
+        {!order.includes('cta') && (
+          <>
+            {params.slug === 'vendor-management' && (
+              <section className="py-8 md:py-10 bg-white dark:bg-[#0f172a] transition-colors border-t border-slate-200 dark:border-slate-800">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                  <VendorManagementProcessFlow />
+                </div>
+              </section>
+            )}
+            {params.slug === 'order-to-cash' && (
+              <section className="py-8 md:py-10 bg-white dark:bg-[#0f172a] transition-colors border-t border-slate-200 dark:border-slate-800">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                  <O2CProcessFlow />
+                </div>
+              </section>
+            )}
+          </>
+        )}
       </main>
       <Footer settings={settings} />
     </div>
