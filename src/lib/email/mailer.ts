@@ -1,5 +1,6 @@
 import nodemailer from 'nodemailer';
-import handlebars from 'handlebars';
+// @ts-ignore
+import handlebars from 'handlebars/dist/handlebars.min.js';
 
 const USER_NAME = process.env.USER_NAME || 'noreply.atilla@gmail.com';
 const PASSWORD = process.env.PASSWORD || '';

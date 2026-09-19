@@ -634,29 +634,151 @@ html.dark .o2cpf {
 
 .o2cpf-legend-muted { font-family: var(--o2c-mono); letter-spacing: 0.06em; }
 
-/* ---------------- Vertical (mobile) layout ---------------- */
+/* ---------------- Vertical (tablet & mobile) layout ---------------- */
 
-.o2cpf[data-orient='vertical'] .o2cpf-board { max-width: 520px; margin-inline: auto; }
-.o2cpf[data-orient='vertical'] .o2cpf-card { min-height: 92px; padding: 11px 12px; }
-.o2cpf[data-orient='vertical'] .o2cpf-card-title { font-size: 12.5px; }
-.o2cpf[data-orient='vertical'] .o2cpf-card-desc { font-size: 10.5px; }
+.o2cpf[data-orient='vertical'] .o2cpf-board {
+  max-width: 520px;
+  margin-inline: auto;
+}
+
+.o2cpf[data-orient='vertical'] .o2cpf-card {
+  min-height: 64px;
+  padding: 8px 11px;
+  gap: 4px;
+  border-radius: 10px;
+}
+
+.o2cpf[data-orient='vertical'] .o2cpf-card-title {
+  font-size: 12px;
+  line-height: 1.25;
+}
+
+.o2cpf[data-orient='vertical'] .o2cpf-card-desc {
+  font-size: 10.5px;
+  line-height: 1.35;
+  -webkit-line-clamp: 2;
+}
+
 .o2cpf[data-orient='vertical'] .o2cpf-strip,
-.o2cpf[data-orient='vertical'] .o2cpf-legend { display: none; }
+.o2cpf[data-orient='vertical'] .o2cpf-legend {
+  display: none;
+}
+
+.o2cpf[data-orient='vertical'] .o2cpf-complete {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 24px 16px;
+  pointer-events: none;
+}
+
+.o2cpf[data-orient='vertical'] .o2cpf-complete-panel {
+  position: sticky;
+  top: 25%;
+  width: min(320px, 92%);
+  margin-top: 24px;
+}
 
 /* ---------------- Responsive tuning ---------------- */
 
-@media (max-width: 1100px) {
-  .o2cpf-card { padding: 10px 11px; min-height: 108px; border-radius: 11px; }
-  .o2cpf-card-title { font-size: 12px; }
-  .o2cpf-card-desc { font-size: 10.5px; }
-  .o2cpf-card-icon { width: 24px; height: 24px; }
-  .o2cpf-strip-name { display: none; }
+/* Desktop mid-screen serpentine (1024px - 1200px) */
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .o2cpf { padding: 22px 20px 20px; }
+  .o2cpf-card { padding: 7px 9px; min-height: 70px; }
+  .o2cpf-card-title { font-size: 11.5px; }
+  .o2cpf-card-desc { font-size: 10px; }
+  .o2cpf-strip-name { font-size: 8px; }
 }
 
-@media (max-width: 820px) {
-  .o2cpf { padding: 20px 16px 18px; border-radius: 20px; }
-  .o2cpf-head { flex-direction: column; gap: 14px; }
-  .o2cpf-sub { font-size: 13px; }
+/* Tablet view (641px - 1023px) - vertical flow */
+@media (min-width: 641px) and (max-width: 1023px) {
+  .o2cpf {
+    padding: 24px 20px 22px;
+    border-radius: 20px;
+  }
+  .o2cpf-head {
+    flex-direction: column;
+    gap: 14px;
+  }
+  .o2cpf-sub {
+    font-size: 13.5px;
+  }
+  .o2cpf[data-orient='vertical'] .o2cpf-board {
+    max-width: 480px;
+  }
+  .o2cpf[data-orient='vertical'] .o2cpf-card {
+    min-height: 66px;
+    padding: 9px 12px;
+  }
+}
+
+/* Mobile view (<= 640px) */
+@media (max-width: 640px) {
+  .o2cpf {
+    padding: 16px 12px 14px;
+    border-radius: 16px;
+  }
+  .o2cpf-head {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .o2cpf-eyebrow {
+    font-size: 9.5px;
+    letter-spacing: 0.08em;
+  }
+  .o2cpf-title {
+    font-size: 18px;
+    line-height: 1.25;
+  }
+  .o2cpf-sub {
+    font-size: 12px;
+    line-height: 1.45;
+  }
+  .o2cpf-meta {
+    gap: 5px 8px;
+  }
+  .o2cpf-meta li {
+    font-size: 10px;
+    padding: 3px 8px;
+  }
+  .o2cpf[data-orient='vertical'] .o2cpf-board {
+    max-width: 100%;
+  }
+  .o2cpf[data-orient='vertical'] .o2cpf-card {
+    min-height: 58px;
+    padding: 6px 8px;
+    gap: 3px;
+    border-radius: 9px;
+  }
+  .o2cpf[data-orient='vertical'] .o2cpf-card-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .o2cpf[data-orient='vertical'] .o2cpf-card-icon svg {
+    width: 12px;
+    height: 12px;
+  }
+  .o2cpf[data-orient='vertical'] .o2cpf-card-title {
+    font-size: 11px;
+    line-height: 1.2;
+  }
+  .o2cpf[data-orient='vertical'] .o2cpf-card-desc {
+    font-size: 9.5px;
+    line-height: 1.3;
+    -webkit-line-clamp: 2;
+  }
+  .o2cpf[data-orient='vertical'] .o2cpf-complete-panel {
+    top: 20%;
+    padding: 14px 14px;
+  }
+  .o2cpf-complete-title {
+    font-size: 15px;
+  }
+  .o2cpf-complete-sub {
+    font-size: 10.5px;
+  }
 }
 
 /* ---------------- Accessibility ---------------- */

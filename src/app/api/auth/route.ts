@@ -3,6 +3,17 @@ import { AuthController } from '@/controllers/AuthController';
 
 const controller = new AuthController();
 
+export async function GET(req: NextRequest) {
+  const url = new URL(req.url);
+  const action = url.searchParams.get('action');
+
+  if (action === 'me') {
+    return controller.getMe(req);
+  }
+
+  return Response.json({ success: false, error: 'Invalid action' }, { status: 400 });
+}
+
 export async function POST(req: NextRequest) {
   const url = new URL(req.url);
   const action = url.searchParams.get('action');
