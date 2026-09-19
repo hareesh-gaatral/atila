@@ -423,23 +423,22 @@ function buildSerpentineLayout(stageCount: number): LayoutModel {
   };
 }
 
-/** Mobile: single vertical rail, cards to the right. */
 function buildVerticalLayout(stageCount: number): LayoutModel {
-  const W = 420;
-  const railX = 56;
-  const firstY = 86;
-  const step = 132;
-  const cardLeft = 96;
-  const cardRight = 16;
+  const W = 380;
+  const railX = 36;
+  const firstY = 72;
+  const step = 144;
+  const cardLeft = 66;
+  const cardRight = 12;
 
   const stations: Pt[] = Array.from({ length: stageCount }, (_, i) => ({
     x: railX,
     y: firstY + i * step,
   }));
   const lastY = firstY + (stageCount - 1) * step;
-  const start: Pt = { x: railX, y: firstY - 52 };
-  const end: Pt = { x: railX, y: lastY + 52 };
-  const H = end.y + 34;
+  const start: Pt = { x: railX, y: firstY - 44 };
+  const end: Pt = { x: railX, y: lastY + 44 };
+  const H = end.y + 24;
 
   return {
     orientation: 'vertical',
@@ -455,13 +454,13 @@ function buildVerticalLayout(stageCount: number): LayoutModel {
       align: 'left' as const,
     })),
     ticks: stations.map((p) => ({
-      from: { x: railX + 8, y: p.y },
-      to: { x: cardLeft - 8, y: p.y },
+      from: { x: railX + 6, y: p.y },
+      to: { x: cardLeft - 4, y: p.y },
     })),
     start,
     end,
-    startLabel: { pt: { x: railX + 16, y: start.y + 3 }, anchor: 'start', text: 'INVITATION' },
-    endLabel: { pt: { x: railX + 16, y: end.y + 3 }, anchor: 'start', text: 'ARCHIVED' },
+    startLabel: { pt: { x: railX + 14, y: start.y + 3.5 }, anchor: 'start', text: 'INVITATION' },
+    endLabel: { pt: { x: railX + 14, y: end.y + 3.5 }, anchor: 'start', text: 'ARCHIVED' },
   };
 }
 
@@ -488,12 +487,13 @@ function usePrefersReducedMotion(): boolean {
 function useIsCompact(): boolean {
   const [compact, setCompact] = useState<boolean>(() =>
     typeof window !== 'undefined' && 'matchMedia' in window
-      ? window.matchMedia('(max-width: 820px)').matches
+      ? window.matchMedia('(max-width: 1023px)').matches
       : false,
   );
   useEffect(() => {
     if (typeof window === 'undefined' || !('matchMedia' in window)) return;
-    const mq = window.matchMedia('(max-width: 820px)');
+    const mq = window.matchMedia('(max-width: 1023px)');
+    setCompact(mq.matches);
     const onChange = (e: MediaQueryListEvent): void => setCompact(e.matches);
     mq.addEventListener('change', onChange);
     return () => mq.removeEventListener('change', onChange);

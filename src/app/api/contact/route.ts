@@ -36,14 +36,12 @@ export async function POST(req: Request) {
       footer2: process.env.FOOTER2 || 'Atila Team',
     });
 
-    const ccRecipients = [
-      ...adminEmails,
-      process.env.USER_NAME,
-    ].filter(Boolean);
+    const primaryAdmin = adminEmails[0] || process.env.USER_NAME || '';
+    const otherAdmins = adminEmails.slice(1);
 
     await sendMail({
-      to: process.env.USER_NAME || '',
-      cc: ccRecipients.filter((e): e is string => typeof e === 'string'),
+      to: primaryAdmin,
+      cc: otherAdmins.length > 0 ? otherAdmins : undefined,
       subject: `New contact message from ${name}`,
       html: notifyHtml,
     });
@@ -70,8 +68,13 @@ export async function POST(req: Request) {
     });
   } catch (err: any) {
     console.error('Contact API error:', err);
+    const isLimitExceeded = err?.responseCode === 550 || err?.message?.includes('550-5.4.5');
+    const userMessage = isLimitExceeded
+      ? 'Gmail daily sending limit exceeded (550-5.4.5). Please update email credentials or wait for the 24-hour quota reset.'
+      : (err.message || 'Failed to send message');
+
     return NextResponse.json(
-      { success: false, error: err.message || 'Failed to send message' },
+      { success: false, error: userMessage },
       { status: 500 }
     );
   }
