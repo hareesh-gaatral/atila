@@ -17,7 +17,6 @@ interface HeroSectionProps {
     displayImageAlt?: string;
     heading?: { brand?: string; highlight?: string; subtext?: string };
     paragraph?: { text?: string; highlight?: string };
-    stats?: Array<{ value?: string; label?: string }>;
   };
 }
 
@@ -30,7 +29,6 @@ export default function HeroSection({ data }: HeroSectionProps) {
   const paragraph = { ...heroContent.paragraph, ...data?.paragraph };
   const highlightText =
     paragraph.highlight && paragraph.text.includes(paragraph.highlight) ? paragraph.highlight : '';
-  const stats = data?.stats?.length ? data.stats : heroContent.stats;
   const buttonText = data?.buttonText || heroContent.buttonText;
   const buttonLink = data?.buttonLink || heroContent.buttonLink;
   const button2Text = data?.button2Text || heroContent.button2Text;
@@ -91,15 +89,6 @@ export default function HeroSection({ data }: HeroSectionProps) {
                 </svg>
                 {button2Text}
               </Link>
-            </div>
-
-            <div className="mt-8 flex gap-8">
-              {stats.map((stat, i) => (
-                <div key={i}>
-                  <div className="text-2xl font-bold text-navy dark:text-teal-400">{stat.value}</div>
-                  <div className="text-slate-500 dark:text-slate-400 text-sm">{stat.label}</div>
-                </div>
-              ))}
             </div>
           </div>
 

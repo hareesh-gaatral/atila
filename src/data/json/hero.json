@@ -15,10 +15,5 @@
   "button2Link": "/contact",
   "imageUrl": "",
   "displayImage": "/png/atilahome.png",
-  "displayImageAlt": "ATILA Platform",
-  "stats": [
-    { "value": "500+", "label": "Enterprises" },
-    { "value": "99.9%", "label": "Uptime" },
-    { "value": "2B+%", "label": "Procured" }
-  ]
+  "displayImageAlt": "ATILA Platform"
 }
