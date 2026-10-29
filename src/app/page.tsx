@@ -6,6 +6,7 @@ import Footer from '@/components/frontend/Footer';
 import TestimonialsSection from '@/components/frontend/TestimonialsSection';
 import FAQSection from '@/components/frontend/FAQSection';
 import HomeContentHydrator from '@/components/frontend/HomeContentHydrator';
+import ScrollReveal from '@/components/frontend/ScrollReveal';
 import dynamic from 'next/dynamic';
 import { getHomeData, getMarquee, getProcurementWheel, getServices } from '@/lib/cache';
 
@@ -66,14 +67,18 @@ export default async function HomePage() {
       <main>
         {render('hero')}
         {marquee && <MarqueeSection content={marquee} />}
-        {wheel && <ProcurementWheel content={wheel} />}
-        {render('about')}
-        {render('services')}
-        {render('features')}
-        {/* {render('testimonials')} */}
-        {render('faq')}
-        {render('cta')}
-        {render('contact')}
+        {wheel && (
+          <ScrollReveal>
+            <ProcurementWheel content={wheel} />
+          </ScrollReveal>
+        )}
+        <ScrollReveal>{render('about')}</ScrollReveal>
+        <ScrollReveal>{render('services')}</ScrollReveal>
+        <ScrollReveal>{render('features')}</ScrollReveal>
+        {/* <ScrollReveal>{render('testimonials')}</ScrollReveal> */}
+        <ScrollReveal>{render('faq')}</ScrollReveal>
+        <ScrollReveal variant="zoom">{render('cta')}</ScrollReveal>
+        <ScrollReveal>{render('contact')}</ScrollReveal>
       </main>
       <Footer settings={settings} />
     </div>

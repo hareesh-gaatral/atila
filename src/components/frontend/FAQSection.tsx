@@ -27,9 +27,9 @@ export default function FAQSection({ data }: FAQSectionProps) {
   };
 
   return (
-    <section id="faq" className="py-12 bg-slate-50 dark:bg-[#111827] transition-colors">
+    <section id="faq" className="py-10 bg-slate-50 dark:bg-[#0f172a] transition-colors">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-8">
+        <div className="text-center mb-6">
           {subtitle && (
             <p className="text-teal-600 dark:text-teal-400 text-sm font-semibold mb-2 uppercase tracking-wider">{subtitle}</p>
           )}

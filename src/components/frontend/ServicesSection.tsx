@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { getServiceLink, getServiceByTitle } from '@/data/services';
 import servicesContent from '@/data/json/services.json';
+import ScrollReveal from '@/components/frontend/ScrollReveal';
 
 interface ServiceItem {
   title?: string;
@@ -62,17 +63,17 @@ export default function ServicesSection({ data, services }: ServicesSectionProps
   }
 
   return (
-    <section id="services" className="py-12 bg-slate-50 dark:bg-[#0f172a] transition-colors">
+    <section id="services" className="py-10 bg-gradient-to-b from-slate-50 to-white dark:from-[#0f172a] dark:to-[#0f172a] transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-10">
+        <div className="text-center mb-8">
           {subtitle && (
             <p className="text-teal-600 dark:text-teal-400 text-sm font-semibold mb-2 uppercase tracking-wider">{subtitle}</p>
           )}
           <h2 className="text-3xl md:text-4xl font-bold text-navy dark:text-slate-50">{title}</h2>
         </div>
-        <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6 items-stretch">
-          {cards.map((card) => (
-            <div key={card.id} className="h-full">
+        <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-5 items-stretch">
+          {cards.map((card, idx) => (
+            <ScrollReveal key={card.id} delay={idx * 60} className="h-full">
               {card.link ? (
                 <Link
                   href={card.link}
@@ -103,7 +104,7 @@ export default function ServicesSection({ data, services }: ServicesSectionProps
                   <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed group-hover:text-white/80 transition">{card.description}</p>
                 </div>
               )}
-            </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>

@@ -24,9 +24,9 @@ export default function TestimonialsSection({ data }: TestimonialsSectionProps) 
   const subtitle = data?.subtitle || testimonialsContent.subtitle;
 
   return (
-    <section id="testimonials" className="py-16 bg-white dark:bg-[#0f172a] transition-colors">
+    <section id="testimonials" className="py-12 bg-white dark:bg-[#0f172a] transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           {subtitle && (
             <p className="text-teal-600 dark:text-teal-400 text-sm font-semibold mb-2 uppercase tracking-wider">{subtitle}</p>
           )}

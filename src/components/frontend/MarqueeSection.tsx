@@ -29,9 +29,9 @@ export default function MarqueeSection({ content }: MarqueeSectionProps) {
   const allImages = [...images, ...images];
 
   return (
-    <section className="py-6 bg-slate-50 dark:bg-[#0f172a] border-y border-slate-200 dark:border-slate-800 transition-colors duration-500">
+    <section className="py-5 bg-slate-50 dark:bg-[#0f172a] border-y border-slate-200 dark:border-slate-800 transition-colors duration-500">
       {sectionTitle && (
-        <div className="text-center mb-6">
+        <div className="text-center mb-4">
           <h2 className="text-sm font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider">{sectionTitle}</h2>
         </div>
       )}

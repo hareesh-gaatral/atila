@@ -32,9 +32,9 @@ export default function AboutSection({ data }: AboutSectionProps) {
 
   return (
   
-    <section id="about" className="pt-14 pb-6 scroll-mt-24 bg-white dark:bg-[#0f172a] transition-colors">
+    <section id="about" className="py-10 scroll-mt-24 bg-white dark:bg-[#0f172a] transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-5">
+        <div className="text-center mb-6">
           <h2 className="text-3xl md:text-4xl font-bold text-navy dark:text-slate-50">{title}</h2>
         </div>
         <div className="grid md:grid-cols-2 gap-6 items-center">
@@ -58,7 +58,7 @@ export default function AboutSection({ data }: AboutSectionProps) {
                 <button
                   key={i}
                   onClick={() => setCurrent(i)}
-                  className={`h-2.5 rounded-full transition-all duration-400 hover:scale-125 ${
+                  className={`h-2.5 rounded-full transition-all duration-300 hover:scale-125 ${
                     i === current ? 'bg-teal-500 w-7 shadow-lg shadow-teal-500/50' : 'bg-white/60 hover:bg-white w-2.5'
                   }`}
                 />
@@ -79,7 +79,7 @@ export default function AboutSection({ data }: AboutSectionProps) {
             {items.length > 0 && (
               <div className="space-y-3 mt-4">
                 {items.map((item, i) => (
-                  <div key={i} className="flex items-start gap-3 p-4 bg-white dark:bg-slate-800 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700 hover:border-teal-500/50 transition border border-slate-200 dark:border-slate-700">
+                  <div key={i} className="flex items-start gap-3 p-4 bg-white dark:bg-slate-800 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700 hover:border-teal-500/50 hover:-translate-y-0.5 hover:shadow-card-hover transition-all duration-300 border border-slate-200 dark:border-slate-700 cursor-default">
                     {item.icon && (
                       <div className="w-11 h-11 bg-teal-600/10 dark:bg-teal-400/20 rounded-xl flex items-center justify-center flex-shrink-0">
                         <span className="text-lg">{item.icon}</span>

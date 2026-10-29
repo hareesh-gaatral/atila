@@ -133,120 +133,123 @@
     {
       "slug": "vendor-management",
       "title": "Vendor Management",
-      "tagline": "Complete vendor lifecycle from invitation to archival",
-      "description": "Centralized vendor database with performance tracking — covering self-registration, onboarding, compliance, approvals, categorization, monitoring and exit.",
+      "tagline": "Manage the complete vendor lifecycle — from onboarding to archival.",
+      "description": "A centralized, ERP-integrated platform that streamlines vendor registration, onboarding, compliance verification, approvals, categorization, and performance monitoring. Seamlessly synchronize vendor master data with your ERP and automate approval workflows to ensure data consistency, stronger governance, improved compliance, and efficient vendor lifecycle management.",
       "icon": "🤝",
       "link": "/services/vendor-management",
       "sections": [
         {
           "num": "01",
           "title": "Vendor Invitation & Self-Registration",
-          "description": "Vendors register themselves through a secure portal.",
+          "description": "Simplify vendor onboarding with a secure, centralized portal that enables prospective vendors to register and submit their business information.",
           "points": [
             "Invitation-based or open self-registration",
-            "Category and geography mapping",
-            "Duplicate vendor prevention"
+            "Configurable registration forms and mandatory fields",
+            "Vendor category and geographical mapping",
+            "Duplicate registration checks using key vendor identifiers",
+            "Registration status tracking"
           ],
-          "result": "Faster onboarding with zero manual data entry.",
+          "result": "Faster vendor registration with reduced manual data entry.",
           "image": "/atilaimages/vendorinvitation.png"
         },
         {
           "num": "02",
-          "title": "Vendor Profile Creation",
-          "description": "Vendors maintain accurate and standardized profiles.",
+          "title": "Vendor Profile & Classification",
+          "description": "Create standardized vendor profiles with structured business information to support accurate vendor master data and effective sourcing.",
           "points": [
-            "Company details",
-            "GST / PAN / MSME",
-            "Bank and contact information",
-            "Product and service mapping"
+            "Company details, legal entity, and registered address",
+            "GST, PAN, MSME/Udyam, and applicable registration details",
+            "Bank account and authorized contact information",
+            "Product, service, material, and Capex category mapping",
+            "Vendor classification by geography and business type"
           ],
-          "result": "Clean, audit-ready vendor master.",
+          "result": "Complete, standardized, ERP-ready vendor profiles.",
           "image": "/atilaimages/vendorregistration.png"
         },
         {
           "num": "03",
-          "title": "Document Upload & Compliance Management",
-          "description": "Ensure statutory and internal compliance from day one.",
+          "title": "Document Management & Compliance",
+          "description": "Centralize vendor documentation and monitor compliance requirements throughout the onboarding process and beyond.",
           "points": [
-            "GST, PAN, bank proof, certifications",
-            "Mandatory and optional document controls",
-            "Expiry date tracking"
+            "Upload GST, PAN, bank proof, certifications, and other required documents",
+            "Configure mandatory and optional documents by vendor category",
+            "Track document submission and verification status",
+            "Monitor expiry dates and trigger renewal reminders",
+            "Maintain a centralized repository of vendor documents"
           ],
-          "result": "No missing or expired documents.",
+          "result": "Organized vendor documentation and proactive compliance tracking.",
           "image": "/atilaimages/vendorlist.png"
         },
         {
           "num": "04",
-          "title": "Automated Validation & Risk Checks",
-          "description": "ATILA performs system-driven validations to reduce risk.",
+          "title": "Vendor Verification & Risk Assessment",
+          "description": "Assess vendor eligibility and identify potential risks before onboarding approval through configurable verification and screening controls.",
           "points": [
-            "Duplicate GST/PAN detection",
-            "Mandatory document validation",
-            "Optional sanctions or blacklist screening"
+            "Detect potential duplicate vendors using GST, PAN, and other identifiers",
+            "Verify statutory, business, and banking information against available sources",
+            "Enable optional sanctions, restricted-party, and internal blacklist screening",
+            "Flag discrepancies and potential compliance risks for review",
+            "Classify vendors based on defined risk criteria"
           ],
-          "result": "Reduced fraud and compliance risk.",
+          "result": "Stronger vendor due diligence and early risk identification.",
           "image": "/atilaimages/vendorworkflow.png"
         },
         {
           "num": "05",
           "title": "Multi-Level Approval Workflow",
-          "description": "Configurable approval flows ensure governance without delays.",
+          "description": "Automate vendor approval processes through configurable workflows that establish accountability and support timely onboarding decisions.",
           "points": [
-            "Procurement, Finance, Compliance approvals",
-            "SLA-based reminders",
-            "Rework and rejection with comments"
+            "Route applications to Procurement, Finance, Compliance, and other authorized approvers",
+            "Configure approval hierarchies based on business rules and vendor categories",
+            "Send SLA-based reminders and escalation notifications",
+            "Manage rework, resubmission, and rejection with comments",
+            "Maintain a complete audit trail of approvals, decisions, and timestamps"
           ],
-          "result": "Transparent, traceable approvals.",
+          "result": "Faster, transparent, and fully traceable vendor approvals.",
           "image": "/atilaimages/vendorDashboard.png"
         },
         {
           "num": "06",
-          "title": "Vendor Activation & ERP Sync",
-          "description": "Once approved, vendors become transaction-ready.",
+          "title": "Vendor Activation & ERP Integration",
+          "description": "Activate approved vendors for business transactions and synchronize vendor master data with connected enterprise systems.",
           "points": [
-            "Vendor status set to Active / De-active / Block / Blacklist",
-            "Eligible for RFQs, POs, and invoices",
-            "Optional ERP integration (SAP, Oracle, etc.)"
+            "Manage vendor statuses such as Active, Inactive, Blocked, and Blacklisted",
+            "Synchronize approved vendor master data with ERP systems such as SAP, Oracle, and other supported platforms",
+            "Map relevant vendor fields between ATILA and the ERP",
+            "Monitor synchronization status and identify failed or pending transfers",
+            "Enable eligible vendors for RFQs, purchase orders, and invoice processes, as applicable"
           ],
-          "result": "One source of truth for vendor data.",
+          "result": "ERP-aligned vendor master data and faster transaction readiness.",
           "image": "/atilaimages/vendorinvitation.png"
         },
         {
           "num": "07",
-          "title": "Vendor Categorization & Classification",
-          "description": "Segment vendors strategically.",
+          "title": "Continuous Compliance & Performance Monitoring",
+          "description": "Maintain ongoing vendor compliance and evaluate supplier performance throughout the business relationship.",
           "points": [
-            "Approved / Preferred / Strategic",
-            "High-risk / Low-risk",
-            "MSME / Non-MSME",
-            "Material / Service / Capex"
+            "Track document validity, expiry dates, and pending renewals",
+            "Send automated notifications for outstanding compliance requirements",
+            "Monitor vendor performance against configured quality, delivery, and service parameters",
+            "Identify non-compliance and performance exceptions",
+            "Trigger reviews, escalations, or temporary transaction restrictions based on configured policies",
+            "Support vendor classification as Approved, Preferred, or Strategic based on defined criteria"
           ],
-          "result": "Smarter sourcing and spend control.",
+          "result": "Continuous compliance, improved supplier performance, and better sourcing decisions.",
           "image": "/atilaimages/vendorlist.png"
         },
         {
           "num": "08",
-          "title": "Continuous Compliance Monitoring",
-          "description": "ATILA ensures compliance is ongoing—not one-time.",
-          "points": [
-            "Document expiry alerts",
-            "Auto-notifications to vendors",
-            "Temporary blocking for non-compliance"
-          ],
-          "result": "Always audit-ready vendor ecosystem.",
-          "image": "/atilaimages/vendorworkflow.png"
-        },
-        {
-          "num": "09",
           "title": "Vendor Exit & Archival",
-          "description": "Control vendor suspension or exit with full audit trail.",
+          "description": "Manage vendor suspension, deactivation, blacklisting, and exit through a controlled process that preserves historical records and supports audit requirements.",
           "points": [
-            "Temporary suspension",
-            "Blacklisting",
-            "Inactive vendor archival",
-            "ERP synchronization"
+            "Initiate vendor suspension or deactivation with appropriate authorization",
+            "Record blacklisting decisions and reasons",
+            "Restrict transactions for blocked or inactive vendors according to configured rules",
+            "Synchronize approved vendor status changes with connected ERP systems",
+            "Archive inactive or exited vendor records while preserving historical transaction data",
+            "Maintain an audit trail of status changes, approvals, and exit decisions"
           ],
-          "result": "Clean vendor database, no clutter.",
+          "result": "Controlled vendor exits, preserved audit history, and a clean, well-governed vendor database.",
           "image": "/atilaimages/vendorDashboard.png"
         }
       ]

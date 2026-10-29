@@ -37,8 +37,8 @@ export default function HeroSection({ data }: HeroSectionProps) {
   return (
     <section className="relative min-h-[60vh] flex items-center bg-gradient-to-br from-slate-50 via-white to-slate-100 dark:from-[#0f172a] dark:via-[#1e293b] dark:to-[#0f172a] overflow-hidden pt-16 transition-colors">
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 right-20 w-96 h-96 bg-[#1e3a5f] dark:bg-teal-500 opacity-[0.07] rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 left-20 w-72 h-72 bg-teal-400 opacity-[0.07] rounded-full blur-3xl"></div>
+        <div className="absolute top-20 right-20 w-96 h-96 bg-[#1e3a5f] dark:bg-teal-500 opacity-[0.12] rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 left-20 w-72 h-72 bg-teal-400 opacity-[0.12] rounded-full blur-3xl animate-pulse"></div>
       </div>
 
       {imageUrl && (
@@ -46,7 +46,7 @@ export default function HeroSection({ data }: HeroSectionProps) {
       )}
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
           <div>
             <div className="inline-block mb-6">
               <span className="bg-teal-600/10 dark:bg-teal-400/20 text-teal-700 dark:text-teal-400 px-4 py-2 rounded-full text-sm font-medium">
@@ -54,7 +54,7 @@ export default function HeroSection({ data }: HeroSectionProps) {
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-5 leading-tight">
               <span className="text-navy dark:text-slate-50">{heading.brand}</span>
               <span className="gradient-text">{heading.highlight}</span>
               <br />

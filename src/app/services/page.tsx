@@ -73,7 +73,7 @@ export default async function ServicesPage() {
           <div className="max-w-4xl mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Need a Custom Procurement Solution?</h2>
             <p className="text-xl text-white/80 mb-8">Talk to our experts and see how ATILA fits your workflows.</p>
-            <Link href="/contact" className="inline-flex items-center gap-2 bg-teal-500 hover:bg-teal-600 dark:hover:bg-teal-400 text-white font-semibold px-8 py-4 rounded-lg transition-all">
+            <Link href="/contact" className="inline-flex items-center gap-2 bg-teal-500 hover:bg-teal-600 dark:hover:bg-teal-400 text-white font-semibold px-8 py-4 rounded-lg transition-all hover:scale-105 hover:shadow-lg">
               Contact Us
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />

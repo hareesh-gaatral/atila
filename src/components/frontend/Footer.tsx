@@ -38,7 +38,7 @@ export default function Footer({ settings }: FooterProps) {
           {/* Logo + Description */}
           <div className="md:col-span-2">
             <div className="mb-3">
-              <img src={content.logo} alt={content.logoAlt} className="h-8 w-auto" />
+              <img src={content.logo} alt={content.logoAlt} className="h-8 w-auto transition-opacity hover:opacity-80" />
             </div>
             <h4 className="font-semibold text-white mb-3 text-xs uppercase tracking-wider">{content.brandTitle}</h4>
             <p className="text-slate-300 dark:text-slate-400 text-xs leading-relaxed max-w-sm whitespace-pre-line">

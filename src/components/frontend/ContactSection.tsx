@@ -129,9 +129,9 @@ export default function ContactSection({ data, settings }: ContactSectionProps) 
   };
 
   return (
-    <section id="contact" className="py-12 bg-white dark:bg-[#0f172a] transition-colors">
+    <section id="contact" className="py-10 bg-white dark:bg-[#0f172a] transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-8">
+        <div className="text-center mb-6">
           {subtitle && (
             <p className="text-teal-600 dark:text-teal-400 text-sm font-semibold mb-2 uppercase tracking-wider">{subtitle}</p>
           )}

@@ -74,11 +74,11 @@ export default function DemoPage() {
         </section>
 
         {/* Demo Request Content */}
-        <section id="demo" className="py-16 bg-white dark:bg-[#0f172a] transition-colors duration-500">
+        <section id="demo" className="py-12 bg-white dark:bg-[#0f172a] transition-colors duration-500">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-12 items-start">
+            <div className="grid lg:grid-cols-2 gap-8 items-start">
               {/* Left: What you'll see + Contact Info */}
-              <div className="space-y-8">
+              <div className="space-y-6">
                 <div>
                   <h3 className="text-lg font-semibold text-navy dark:text-slate-50 mb-4">
                     What You&apos;ll See in the Demo
@@ -90,7 +90,7 @@ export default function DemoPage() {
                       { title: 'Contract Lifecycle', desc: 'Author, negotiate, approve and track contracts digitally.' },
                       { title: 'Spend Analytics', desc: 'Real-time dashboards that uncover savings opportunities.' },
                     ].map((item) => (
-                      <li key={item.title} className="flex items-start gap-4 p-4 bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 transition-colors duration-500">
+                      <li key={item.title} className="flex items-start gap-4 p-4 bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 transition-all duration-300 hover:border-teal-500/50 hover:-translate-y-0.5 hover:shadow-card-hover cursor-default">
                         <span className="w-10 h-10 bg-teal-600/10 dark:bg-teal-400/20 rounded-full flex items-center justify-center flex-shrink-0 text-teal-700 dark:text-teal-400">
                           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -199,7 +199,7 @@ export default function DemoPage() {
                     <button
                       type="submit"
                       disabled={submitting}
-                      className="w-full bg-teal-500 hover:bg-teal-600 disabled:bg-slate-400 disabled:cursor-not-allowed disabled:hover:bg-slate-400 dark:hover:bg-teal-400 dark:disabled:bg-slate-700 dark:disabled:hover:bg-slate-700 text-white font-semibold px-8 py-4 rounded-lg transition-all"
+                      className="w-full bg-teal-500 hover:bg-teal-600 disabled:bg-slate-400 disabled:cursor-not-allowed disabled:hover:bg-slate-400 dark:hover:bg-teal-400 dark:disabled:bg-slate-700 dark:disabled:hover:bg-slate-700 text-white font-semibold px-8 py-4 rounded-lg transition-all hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0"
                     >
                       {submitting ? 'Sending...' : submitted ? '✓ Request Received!' : 'Schedule a Demo'}
                     </button>

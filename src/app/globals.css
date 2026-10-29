@@ -50,6 +50,12 @@ body {
   100% { transform: translateX(-50%); }
 }
 
+/* Navbar dropdown fade-in-down */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-8px) scale(0.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
 .animate-marquee {
   animation: marquee 35s linear infinite;
 }
