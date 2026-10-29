@@ -63,7 +63,7 @@ export default function HeroSection({ data }: HeroSectionProps) {
               <span className="text-navy dark:text-slate-50">{heading.subtext}</span>
             </h1>
 
-            <p className="text-lg text-slate-600 dark:text-slate-300 mb-10 leading-relaxed max-w-xl">
+            <p className="text-lg text-slate-600 dark:text-slate-300 mb-8 leading-relaxed max-w-xl">
               {highlightText ? (
                 paragraph.text.split(highlightText).map((part, i, arr) => (
                   <span key={i}>
@@ -93,7 +93,7 @@ export default function HeroSection({ data }: HeroSectionProps) {
               </Link>
             </div>
 
-            <div className="mt-12 flex gap-10">
+            <div className="mt-8 flex gap-8">
               {stats.map((stat, i) => (
                 <div key={i}>
                   <div className="text-2xl font-bold text-navy dark:text-teal-400">{stat.value}</div>
@@ -104,8 +104,8 @@ export default function HeroSection({ data }: HeroSectionProps) {
           </div>
 
           <div className="hidden lg:block relative">
-            <div className="relative w-full h-[350px] rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-slate-100 to-slate-200 dark:from-[#1e293b] dark:to-[#334155] transition-colors border border-slate-200 dark:border-slate-700">
-              <img src={displayImage} alt={displayImageAlt} className="w-full h-full object-cover object-center" />
+            <div className="group relative w-full h-[350px] rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-slate-100 to-slate-200 dark:from-[#1e293b] dark:to-[#334155] transition-all duration-500 border border-slate-200 dark:border-slate-700 hover:shadow-2xl hover:border-teal-500/50 hover:-translate-y-1">
+              <img src={displayImage} alt={displayImageAlt} className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" />
             </div>
           </div>
         </div>

@@ -57,9 +57,9 @@ function toImageUrl(val: any): string {
 
 function WalkthroughRegion({ steps }: { steps: IServiceStep[] }) {
   return (
-    <section className="py-16 bg-white dark:bg-[#0f172a] transition-colors duration-500">
+    <section className="py-12 bg-white dark:bg-[#0f172a] transition-colors duration-500">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="space-y-20">
+        <div className="space-y-14">
           {steps.map((section, i) => (
             <div key={i} className="grid md:grid-cols-2 gap-12 items-center">
               {/* Image */}
@@ -130,9 +130,9 @@ function WalkthroughRegion({ steps }: { steps: IServiceStep[] }) {
 
 function KeyPointsRegion({ points }: { points: string[] }) {
   return (
-    <section className="py-16 bg-white dark:bg-[#0f172a] transition-colors duration-500">
+    <section className="py-12 bg-white dark:bg-[#0f172a] transition-colors duration-500">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <p className="text-teal-600 dark:text-teal-400 text-sm font-semibold mb-2 uppercase tracking-wider">Highlights</p>
           <h2 className="text-3xl md:text-4xl font-bold text-navy dark:text-slate-50">Key Points at a Glance</h2>
         </div>
@@ -158,9 +158,9 @@ function KeyPointsRegion({ points }: { points: string[] }) {
 
 function BenefitsRegion({ benefits }: { benefits: string[] }) {
   return (
-    <section className="py-16 bg-white dark:bg-[#0f172a] transition-colors duration-500">
+    <section className="py-12 bg-white dark:bg-[#0f172a] transition-colors duration-500">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <p className="text-teal-600 dark:text-teal-400 text-sm font-semibold mb-2 uppercase tracking-wider">Key Benefits</p>
           <h2 className="text-3xl md:text-4xl font-bold text-navy dark:text-slate-50">Why You&apos;ll Love It</h2>
         </div>
@@ -186,9 +186,9 @@ function BenefitsRegion({ benefits }: { benefits: string[] }) {
 
 function FeaturesRegion({ features }: { features: string[] }) {
   return (
-    <section className="py-16 bg-slate-50 dark:bg-[#0f172a] transition-colors duration-500">
+    <section className="py-12 bg-slate-50 dark:bg-[#0f172a] transition-colors duration-500">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <p className="text-teal-600 dark:text-teal-400 text-sm font-semibold mb-2 uppercase tracking-wider">Features</p>
           <h2 className="text-3xl md:text-4xl font-bold text-navy dark:text-slate-50">Everything Included</h2>
         </div>
@@ -214,9 +214,9 @@ function FeaturesRegion({ features }: { features: string[] }) {
 
 function HowItWorksRegion({ steps }: { steps: string[] }) {
   return (
-    <section className="py-16 bg-white dark:bg-[#0f172a] transition-colors duration-500">
+    <section className="py-12 bg-white dark:bg-[#0f172a] transition-colors duration-500">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <p className="text-teal-600 dark:text-teal-400 text-sm font-semibold mb-2 uppercase tracking-wider">How It Works</p>
           <h2 className="text-3xl md:text-4xl font-bold text-navy dark:text-slate-50">Simple, Governed Process</h2>
         </div>

@@ -40,7 +40,7 @@ export default function Footer({ settings }: FooterProps) {
             <div className="mb-3">
               <img src={content.logo} alt={content.logoAlt} className="h-8 w-auto" />
             </div>
-            <p className="text-slate-300 dark:text-slate-400 text-xs leading-relaxed max-w-sm">
+            <p className="text-slate-300 dark:text-slate-400 text-xs leading-relaxed max-w-sm whitespace-pre-line">
               {content.description}
             </p>
           </div>

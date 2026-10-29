@@ -70,22 +70,22 @@ export default function ServicesSection({ data, services }: ServicesSectionProps
           )}
           <h2 className="text-3xl md:text-4xl font-bold text-navy dark:text-slate-50">{title}</h2>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6 items-stretch">
           {cards.map((card) => (
-            <div key={card.id}>
+            <div key={card.id} className="h-full">
               {card.link ? (
                 <Link
                   href={card.link}
-                  className="block bg-white dark:bg-slate-800 rounded-xl p-8 shadow-sm hover:shadow-card-hover transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-teal-500/50 hover:-translate-y-1 group h-full"
+                  className="block bg-white dark:bg-slate-800 rounded-xl p-6 shadow-sm hover:bg-navy dark:hover:bg-teal-500 transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-teal-500/50 hover:-translate-y-1 group h-full"
                 >
                   {card.icon && (
-                    <div className="w-14 h-14 bg-teal-600/10 dark:bg-teal-400/20 rounded-xl flex items-center justify-center mb-5 group-hover:bg-teal-500 dark:group-hover:bg-teal-400 transition">
+                    <div className="w-14 h-14 bg-teal-600/10 dark:bg-teal-400/20 rounded-xl flex items-center justify-center mb-4 group-hover:bg-white/20 transition">
                       <span className="text-2xl group-hover:text-white transition">{card.icon}</span>
                     </div>
                   )}
-                  <h3 className="text-xl font-bold text-navy dark:text-slate-50 mb-3">{card.title}</h3>
-                  <p className="text-slate-600 dark:text-slate-300 leading-relaxed mb-5">{card.description}</p>
-                  <div className="inline-flex items-center gap-2 text-teal-700 dark:text-teal-400 font-semibold text-sm group-hover:gap-3 transition-all">
+                  <h3 className="font-bold text-navy dark:text-slate-50 mb-2 group-hover:text-white transition">{card.title}</h3>
+                  <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-4 group-hover:text-white/80 transition">{card.description}</p>
+                  <div className="inline-flex items-center gap-2 text-teal-700 dark:text-teal-400 font-semibold text-sm group-hover:gap-3 group-hover:text-white transition-all">
                     {viewDetailsText}
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -93,14 +93,14 @@ export default function ServicesSection({ data, services }: ServicesSectionProps
                   </div>
                 </Link>
               ) : (
-                <div className="bg-white dark:bg-slate-800 rounded-xl p-8 shadow-sm hover:shadow-card-hover transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-teal-500/50 hover:-translate-y-1 group h-full">
+                <div className="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-sm hover:bg-navy dark:hover:bg-teal-500 transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-teal-500/50 hover:-translate-y-1 group h-full">
                   {card.icon && (
-                    <div className="w-14 h-14 bg-teal-600/10 dark:bg-teal-400/20 rounded-xl flex items-center justify-center mb-5 group-hover:bg-teal-500 dark:group-hover:bg-teal-400 transition">
+                    <div className="w-14 h-14 bg-teal-600/10 dark:bg-teal-400/20 rounded-xl flex items-center justify-center mb-4 group-hover:bg-white/20 transition">
                       <span className="text-2xl group-hover:text-white transition">{card.icon}</span>
                     </div>
                   )}
-                  <h3 className="text-xl font-bold text-navy dark:text-slate-50 mb-3">{card.title}</h3>
-                  <p className="text-slate-600 dark:text-slate-300 leading-relaxed">{card.description}</p>
+                  <h3 className="font-bold text-navy dark:text-slate-50 mb-2 group-hover:text-white transition">{card.title}</h3>
+                  <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed group-hover:text-white/80 transition">{card.description}</p>
                 </div>
               )}
             </div>

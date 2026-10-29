@@ -1,10 +1,10 @@
 {
   "title": "About ATILA",
   "subtitle": "Who We Are",
-  "content": "ATILA is a comprehensive procurement platform designed to streamline enterprise purchasing workflows. Built with real-world challenges in mind, it delivers modern solutions for complex procurement processes.",
+  "content": "ATILA is an enterprise procurement and supply chain management platform designed to simplify purchasing, strengthen supplier collaboration, and improve operational visibility.",
   "paragraphs": [
-    "Designed by practitioners with SAP-led enterprise transformation expertise.",
-    "Built to enforce compliance, governance, and end-to-end visibility across sourcing, purchasing, and supplier management."
+    "From supplier onboarding and sourcing to purchase orders, contract management, invoice processing, inventory, and logistics, ATILA brings essential business workflows together in one connected platform.",
+    "Built around real-world business requirements, ATILA supports configurable workflows, approval controls, ERP integration, and data-driven decision-making to help organizations manage procurement more efficiently."
   ],
   "images": [
     "/atilaimages/atilaabout1.png",
@@ -12,8 +12,8 @@
     "/atilaimages/atilaabout3.png"
   ],
   "items": [
-    { "title": "Enterprise Grade", "description": "Built for large-scale procurement operations", "icon": "🏢" },
-    { "title": "Secure Platform", "description": "Bank-level security for your procurement data", "icon": "🔒" },
-    { "title": "Real-time Analytics", "description": "Track spending and optimize procurement", "icon": "📊" }
+    { "title": "Enterprise-ready workflows", "description": "Configurable procurement processes, approvals, and governance.", "icon": "🏢" },
+    { "title": "Connected business operations", "description": "Integrated workflows across suppliers, sourcing, purchasing, finance, and supply chain.", "icon": "🔗" },
+    { "title": "Visibility and insights", "description": "Monitor procurement activities, supplier performance, spending, and operational trends.", "icon": "📊" }
   ]
 }

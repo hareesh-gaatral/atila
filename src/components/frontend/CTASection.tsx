@@ -26,11 +26,13 @@ export default function CTASection({ data }: CTASectionProps) {
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
           {title}
         </h2>
-        <p className="text-xl text-white/80 mb-10 max-w-2xl mx-auto">
-          {content}
-        </p>
+        {content && (
+          <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
+            {content}
+          </p>
+        )}
         {buttonText && (
-          <a href={buttonLink} className="inline-flex items-center gap-2 bg-teal-500 hover:bg-teal-600 dark:hover:bg-teal-400 text-white font-semibold px-8 py-4 rounded-lg transition-all transform hover:scale-105 shadow-lg">
+          <a href={buttonLink} className="inline-flex items-center gap-2 bg-teal-500 hover:bg-teal-600 dark:hover:bg-teal-400 text-white font-semibold px-8 py-4 rounded-lg transition-all transform hover:scale-105 hover:-translate-y-0.5 hover:shadow-xl shadow-lg">
             {buttonText}
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />

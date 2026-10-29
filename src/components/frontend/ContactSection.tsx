@@ -131,29 +131,29 @@ export default function ContactSection({ data, settings }: ContactSectionProps) 
   return (
     <section id="contact" className="py-12 bg-white dark:bg-[#0f172a] transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           {subtitle && (
             <p className="text-teal-600 dark:text-teal-400 text-sm font-semibold mb-2 uppercase tracking-wider">{subtitle}</p>
           )}
           <h2 className="text-3xl md:text-4xl font-bold text-navy dark:text-slate-50">{title}</h2>
           {content && (
-            <p className="text-slate-600 dark:text-slate-300 mt-4 max-w-xl mx-auto">{content}</p>
+            <p className="text-slate-600 dark:text-slate-300 mt-3 max-w-xl mx-auto">{content}</p>
           )}
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid lg:grid-cols-2 gap-8 items-start">
           {/* Contact Info */}
-          <div className="space-y-6">
+          <div className="space-y-4">
             <h3 className="text-lg font-semibold text-navy dark:text-slate-50">{heading}</h3>
             {infoCards.map((card, i) => {
               const href = hrefFor(card.type);
               return (
-                <div key={i} className="flex items-start gap-4 p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-card transition-colors">
-                  <div className="w-12 h-12 bg-teal-600/10 dark:bg-teal-400/20 rounded-full flex items-center justify-center flex-shrink-0">
+                <div key={i} className="group flex items-start gap-4 p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-card hover:border-teal-500/50 hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-300 cursor-pointer">
+                  <div className="w-12 h-12 bg-teal-600/10 dark:bg-teal-400/20 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-teal-500 group-hover:text-white transition-all duration-300">
                     {iconFor(card.type)}
                   </div>
                   <div>
-                    <h4 className="font-semibold text-navy dark:text-slate-200 mb-1">{card.label}</h4>
+                    <h4 className="font-semibold text-navy dark:text-slate-200 mb-1 group-hover:text-teal-700 dark:group-hover:text-teal-400 transition">{card.label}</h4>
                     {href ? (
                       <a href={href} className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed hover:text-teal-700 dark:hover:text-teal-400 transition">
                         {valueFor(card.type)}
@@ -167,11 +167,11 @@ export default function ContactSection({ data, settings }: ContactSectionProps) 
             })}
 
             {/* Google Map */}
-            <div className="rounded-xl overflow-hidden shadow-card border border-slate-200 dark:border-slate-700">
+            <div className="rounded-xl overflow-hidden shadow-card border border-slate-200 dark:border-slate-700 hover:border-teal-500/50 transition">
               <iframe
                 src={mapUrl}
                 width="100%"
-                height="220"
+                height="200"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
@@ -182,29 +182,29 @@ export default function ContactSection({ data, settings }: ContactSectionProps) 
           </div>
 
           {/* Contact Form */}
-          <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-card p-8 md:p-10 border border-slate-200 dark:border-slate-700">
-            <h3 className="text-xl font-bold text-navy dark:text-slate-50 mb-6">{formHeading}</h3>
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
+          <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-card p-6 md:p-8 border border-slate-200 dark:border-slate-700 hover:shadow-card-hover transition-shadow">
+            <h3 className="text-xl font-bold text-navy dark:text-slate-50 mb-5">{formHeading}</h3>
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-slate-600 dark:text-slate-400 mb-2">{form.name?.label}</label>
-                  <input type="text" placeholder={form.name?.placeholder} className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500/20 focus:border-teal-500 transition bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 placeholder:text-slate-400 dark:placeholder:text-slate-500 ${validationErrors.name ? 'border-red-500 focus:border-red-500 focus:ring-red-500/20' : 'border-slate-200 dark:border-slate-700'}`} value={formData.name} onChange={(e) => { setFormData({ ...formData, name: e.target.value }); if (validationErrors.name) setValidationErrors({ ...validationErrors, name: '' }); }} required />
+                  <input type="text" placeholder={form.name?.placeholder} className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500/20 focus:border-teal-500 hover:border-teal-400 dark:hover:border-teal-400 transition bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 placeholder:text-slate-400 dark:placeholder:text-slate-500 ${validationErrors.name ? 'border-red-500 focus:border-red-500 focus:ring-red-500/20' : 'border-slate-200 dark:border-slate-700'}`} value={formData.name} onChange={(e) => { setFormData({ ...formData, name: e.target.value }); if (validationErrors.name) setValidationErrors({ ...validationErrors, name: '' }); }} required />
                   {validationErrors.name && <p className="mt-1 text-sm text-red-600 dark:text-red-400">{validationErrors.name}</p>}
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-slate-600 dark:text-slate-400 mb-2">{form.email?.label}</label>
-                  <input type="email" placeholder={form.email?.placeholder} className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500/20 focus:border-teal-500 transition bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 placeholder:text-slate-400 dark:placeholder:text-slate-500 ${validationErrors.email ? 'border-red-500 focus:border-red-500 focus:ring-red-500/20' : 'border-slate-200 dark:border-slate-700'}`} value={formData.email} onChange={(e) => { setFormData({ ...formData, email: e.target.value }); if (validationErrors.email) setValidationErrors({ ...validationErrors, email: '' }); }} required />
+                  <input type="email" placeholder={form.email?.placeholder} className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500/20 focus:border-teal-500 hover:border-teal-400 dark:hover:border-teal-400 transition bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 placeholder:text-slate-400 dark:placeholder:text-slate-500 ${validationErrors.email ? 'border-red-500 focus:border-red-500 focus:ring-red-500/20' : 'border-slate-200 dark:border-slate-700'}`} value={formData.email} onChange={(e) => { setFormData({ ...formData, email: e.target.value }); if (validationErrors.email) setValidationErrors({ ...validationErrors, email: '' }); }} required />
                   {validationErrors.email && <p className="mt-1 text-sm text-red-600 dark:text-red-400">{validationErrors.email}</p>}
                 </div>
               </div>
               <div>
                 <label className="block text-sm font-medium text-slate-600 dark:text-slate-400 mb-2">{form.phone?.label}</label>
-                <input type="tel" placeholder={form.phone?.placeholder} className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500/20 focus:border-teal-500 transition bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 placeholder:text-slate-400 dark:placeholder:text-slate-500 ${validationErrors.phone ? 'border-red-500 focus:border-red-500 focus:ring-red-500/20' : 'border-slate-200 dark:border-slate-700'}`} value={formData.phone} onChange={(e) => { setFormData({ ...formData, phone: e.target.value }); if (validationErrors.phone) setValidationErrors({ ...validationErrors, phone: '' }); }} />
+                <input type="tel" placeholder={form.phone?.placeholder} className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500/20 focus:border-teal-500 hover:border-teal-400 dark:hover:border-teal-400 transition bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 placeholder:text-slate-400 dark:placeholder:text-slate-500 ${validationErrors.phone ? 'border-red-500 focus:border-red-500 focus:ring-red-500/20' : 'border-slate-200 dark:border-slate-700'}`} value={formData.phone} onChange={(e) => { setFormData({ ...formData, phone: e.target.value }); if (validationErrors.phone) setValidationErrors({ ...validationErrors, phone: '' }); }} />
                 {validationErrors.phone && <p className="mt-1 text-sm text-red-600 dark:text-red-400">{validationErrors.phone}</p>}
               </div>
               <div>
                 <label className="block text-sm font-medium text-slate-600 dark:text-slate-400 mb-2">{form.message?.label}</label>
-                <textarea placeholder={form.message?.placeholder} rows={5} className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500/20 focus:border-teal-500 transition bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 placeholder:text-slate-400 dark:placeholder:text-slate-500 resize-none ${validationErrors.message ? 'border-red-500 focus:border-red-500 focus:ring-red-500/20' : 'border-slate-200 dark:border-slate-700'}`} value={formData.message} onChange={(e) => { setFormData({ ...formData, message: e.target.value }); if (validationErrors.message) setValidationErrors({ ...validationErrors, message: '' }); }} required />
+                <textarea placeholder={form.message?.placeholder} rows={4} className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500/20 focus:border-teal-500 hover:border-teal-400 dark:hover:border-teal-400 transition bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 placeholder:text-slate-400 dark:placeholder:text-slate-500 resize-none ${validationErrors.message ? 'border-red-500 focus:border-red-500 focus:ring-red-500/20' : 'border-slate-200 dark:border-slate-700'}`} value={formData.message} onChange={(e) => { setFormData({ ...formData, message: e.target.value }); if (validationErrors.message) setValidationErrors({ ...validationErrors, message: '' }); }} required />
                 {validationErrors.message && <p className="mt-1 text-sm text-red-600 dark:text-red-400">{validationErrors.message}</p>}
               </div>
               {error && (
@@ -215,7 +215,7 @@ export default function ContactSection({ data, settings }: ContactSectionProps) 
               <button
                 type="submit"
                 disabled={submitting}
-                className="w-full bg-teal-500 hover:bg-teal-600 disabled:bg-slate-400 disabled:cursor-not-allowed disabled:hover:bg-slate-400 dark:hover:bg-teal-400 dark:disabled:bg-slate-700 dark:disabled:hover:bg-slate-700 text-white font-semibold px-8 py-4 rounded-lg transition-all"
+                className="w-full bg-teal-500 hover:bg-teal-600 disabled:bg-slate-400 disabled:cursor-not-allowed disabled:hover:bg-slate-400 dark:hover:bg-teal-400 dark:disabled:bg-slate-700 dark:disabled:hover:bg-slate-700 text-white font-semibold px-8 py-3.5 rounded-lg transition-all hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0"
               >
                 {submitting ? 'Sending...' : submitted ? form.successText : form.submitText}
               </button>

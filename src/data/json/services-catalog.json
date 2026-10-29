@@ -356,6 +356,170 @@
           "image": "/atilaimages/reportandanalasys.png"
         }
       ]
+    },
+    {
+      "slug": "budget-management",
+      "title": "Budget Management",
+      "tagline": "Plan, track and control procurement budgets",
+      "description": "Set budgets, align spend to approvals and monitor budget vs actuals across every procurement transaction — with alerts before limits are exceeded.",
+      "icon": "💼",
+      "link": "/services/budget-management",
+      "sections": [
+        {
+          "num": "01",
+          "title": "Budget Planning & Allocation",
+          "description": "Define budgets by cost center, category, project or department.",
+          "points": [
+            "Annual and periodic budget planning",
+            "Cost center and category-wise allocation",
+            "Import budgets from ERP or spreadsheets"
+          ],
+          "result": "Clear budget ownership from day one.",
+          "image": "/atilaimages/reportandanalasys.png"
+        },
+        {
+          "num": "02",
+          "title": "Budget Requests & Approvals",
+          "description": "Budget additions and revisions follow a governed approval flow.",
+          "points": [
+            "Budget request forms with justification",
+            "Multi-level approval workflow",
+            "SLA-based reminders and escalations"
+          ],
+          "result": "Faster, governed budget approvals.",
+          "image": "/atilaimages/vendorworkflow.png"
+        },
+        {
+          "num": "03",
+          "title": "Commitment & Encumbrance Tracking",
+          "description": "Every PR, PO and contract reserves budget in real time.",
+          "points": [
+            "PR, PO and contract commitments reserve budget",
+            "Live committed vs available balance",
+            "Receipts and invoice adjustments update instantly"
+          ],
+          "result": "No surprise overspending.",
+          "image": "/atilaimages/procpurchaseordermanagement.png"
+        },
+        {
+          "num": "04",
+          "title": "Budget vs Actual Tracking",
+          "description": "Compare planned, committed and actual spend continuously.",
+          "points": [
+            "Planned vs committed vs actual comparison",
+            "Variance by cost center, category and period",
+            "Drill-down to individual transactions"
+          ],
+          "result": "Full visibility into spend against plan.",
+          "image": "/atilaimages/vendorDashboard.png"
+        },
+        {
+          "num": "05",
+          "title": "Alerts & Threshold Controls",
+          "description": "Configurable limits keep spending within policy.",
+          "points": [
+            "Threshold warnings (e.g. 70% / 90% / 100%)",
+            "Hard blocks or overrides with justification",
+            "Email and in-app notifications"
+          ],
+          "result": "Budget breaches caught early.",
+          "image": "/atilaimages/vendorlist.png"
+        },
+        {
+          "num": "06",
+          "title": "Budget Analytics & Reporting",
+          "description": "Finance gets the numbers it needs for review and forecasting.",
+          "points": [
+            "Utilization and burn-rate dashboards",
+            "Forecast and re-forecast views",
+            "Exportable reports for finance reviews"
+          ],
+          "result": "Data-driven budget decisions.",
+          "image": "/atilaimages/invoicemanagement.png"
+        }
+      ]
+    },
+    {
+      "slug": "contract-management",
+      "title": "Contract Management",
+      "tagline": "Full contract lifecycle from creation to renewal",
+      "description": "Create, approve, store and monitor contracts in one repository — track obligations, milestones, renewals and compliance through the entire lifecycle.",
+      "icon": "📑",
+      "link": "/services/contract-management",
+      "sections": [
+        {
+          "num": "01",
+          "title": "Centralized Contract Repository",
+          "description": "All contracts live in one searchable, secure location.",
+          "points": [
+            "Single source of truth for all contracts",
+            "Search by vendor, category, value or status",
+            "Version history and document storage"
+          ],
+          "result": "No more scattered contract files.",
+          "image": "/atilaimages/vendorlist.png"
+        },
+        {
+          "num": "02",
+          "title": "Contract Creation & Templates",
+          "description": "Standard templates make drafting fast and consistent.",
+          "points": [
+            "Standard clause and template library",
+            "Terms, pricing, SLAs and payment conditions",
+            "Draft, review and redline workflows"
+          ],
+          "result": "Faster contract drafting with consistency.",
+          "image": "/atilaimages/procpurchaserequiation.png"
+        },
+        {
+          "num": "03",
+          "title": "Review & Approval Workflow",
+          "description": "Legal, finance and business stakeholders approve in sequence.",
+          "points": [
+            "Configurable routing by contract value or risk",
+            "Comments, rework and rejection with reasons",
+            "Complete approval audit trail"
+          ],
+          "result": "Governed, transparent approvals.",
+          "image": "/atilaimages/vendorworkflow.png"
+        },
+        {
+          "num": "04",
+          "title": "Obligation & Milestone Tracking",
+          "description": "Commitments in the contract are tracked until fulfillment.",
+          "points": [
+            "Delivery, pricing and SLA obligations",
+            "Key dates and milestone reminders",
+            "Contracts linked to POs and receipts"
+          ],
+          "result": "Commitments are never missed.",
+          "image": "/atilaimages/orderscheduling.png"
+        },
+        {
+          "num": "05",
+          "title": "Renewals & Expiry Alerts",
+          "description": "Nothing lapses without a decision being made.",
+          "points": [
+            "Auto alerts before expiry dates",
+            "Renew / renegotiate / close decisions",
+            "Roll-over and evergreen contract support"
+          ],
+          "result": "No accidental contract lapses.",
+          "image": "/atilaimages/reportandanalasys.png"
+        },
+        {
+          "num": "06",
+          "title": "Compliance & Audit Trail",
+          "description": "Every change and approval is recorded and reviewable.",
+          "points": [
+            "Access controls and e-approval records",
+            "Audit-ready contract history",
+            "Alignment with internal policy and regulatory rules"
+          ],
+          "result": "Risk reduced, audits simplified.",
+          "image": "/atilaimages/vendorDashboard.png"
+        }
+      ]
     }
   ]
 }

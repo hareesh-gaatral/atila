@@ -27,16 +27,16 @@ export default function FAQSection({ data }: FAQSectionProps) {
   };
 
   return (
-    <section id="faq" className="py-16 bg-slate-50 dark:bg-[#111827] transition-colors">
+    <section id="faq" className="py-12 bg-slate-50 dark:bg-[#111827] transition-colors">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           {subtitle && (
             <p className="text-teal-600 dark:text-teal-400 text-sm font-semibold mb-2 uppercase tracking-wider">{subtitle}</p>
           )}
           <h2 className="text-3xl md:text-4xl font-bold text-navy dark:text-slate-50">{title}</h2>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-3">
           {items.map((item, i) => {
             const isOpen = openIndex === i;
             return (
@@ -45,16 +45,16 @@ export default function FAQSection({ data }: FAQSectionProps) {
                 className={`bg-white dark:bg-slate-800 rounded-xl border transition-all duration-300 ${
                   isOpen
                     ? 'border-teal-500/40 dark:border-teal-400/40 shadow-card'
-                    : 'border-slate-200 dark:border-slate-700'
+                    : 'border-slate-200 dark:border-slate-700 hover:border-teal-500/50 dark:hover:border-teal-400/50 hover:shadow-card'
                 }`}
               >
                 <button
                   type="button"
                   onClick={() => toggle(i)}
                   aria-expanded={isOpen}
-                  className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left"
+                  className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left group"
                 >
-                  <span className="font-semibold text-navy dark:text-slate-50">{item.title}</span>
+                  <span className="font-semibold text-navy dark:text-slate-50 group-hover:text-teal-700 dark:group-hover:text-teal-400 transition">{item.title}</span>
                   <svg
                     className={`w-5 h-5 flex-shrink-0 text-teal-600 dark:text-teal-400 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
                     fill="none"

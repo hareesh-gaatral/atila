@@ -65,7 +65,7 @@ function SideColumn({ wheel, side }: { wheel: Record<string, any>; side: 'buyers
         >
           {loop.map((card, i) => (
             <div key={i} className="pb-4">
-              <div className="rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50/90 dark:bg-slate-700/30 p-4">
+              <div className="rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50/90 dark:bg-slate-700/30 p-4 hover:border-teal-500/40 hover:bg-white dark:hover:bg-slate-700/60 transition-all duration-300">
                 <p className="text-[15px] font-bold text-navy dark:text-slate-100 leading-snug">
                   {card.title}
                 </p>
@@ -188,7 +188,7 @@ export default function ProcurementWheel({ content }: { content?: Record<string,
             <span
               key={i}
               className={[
-                'text-white px-5 py-2 rounded-full text-sm font-medium',
+                'text-white px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg cursor-default',
                 i === 0 && 'bg-navy dark:bg-teal-500',
                 i === 1 && 'bg-teal-500',
                 i === 2 && 'bg-slate-500',

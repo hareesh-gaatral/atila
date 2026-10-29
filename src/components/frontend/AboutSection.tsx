@@ -32,12 +32,12 @@ export default function AboutSection({ data }: AboutSectionProps) {
 
   return (
   
-    <section id="about" className="pt-24 pb-8 bg-white dark:bg-[#0f172a] transition-colors">
+    <section id="about" className="pt-14 pb-6 scroll-mt-24 bg-white dark:bg-[#0f172a] transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-6">
+        <div className="text-center mb-5">
           <h2 className="text-3xl md:text-4xl font-bold text-navy dark:text-slate-50">{title}</h2>
         </div>
-        <div className="grid md:grid-cols-2 gap-8 items-center">
+        <div className="grid md:grid-cols-2 gap-6 items-center">
           {/* Left - Image */}
           <div className="relative rounded-2xl overflow-hidden shadow-xl border border-slate-200 dark:border-slate-700 h-[350px] hover:shadow-2xl hover:border-teal-600/50 dark:hover:border-teal-400/50 transition-all duration-500 group cursor-pointer">
             {images.map((img, i) => (
@@ -68,26 +68,26 @@ export default function AboutSection({ data }: AboutSectionProps) {
 
           {/* Right - Content */}
           <div>
-            <p className="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed mb-3">
               {firstParagraph}
             </p>
             {paragraphs.map((paragraph, i) => (
-              <p key={i} className="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+              <p key={i} className="text-slate-600 dark:text-slate-300 leading-relaxed mb-3">
                 {paragraph}
               </p>
             ))}
             {items.length > 0 && (
-              <div className="space-y-4">
+              <div className="space-y-3 mt-4">
                 {items.map((item, i) => (
-                  <div key={i} className="flex items-start gap-4 p-5 bg-white dark:bg-slate-800 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700 transition border border-slate-200 dark:border-slate-700">
+                  <div key={i} className="flex items-start gap-3 p-4 bg-white dark:bg-slate-800 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700 hover:border-teal-500/50 transition border border-slate-200 dark:border-slate-700">
                     {item.icon && (
-                      <div className="w-12 h-12 bg-teal-600/10 dark:bg-teal-400/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                        <span className="text-xl">{item.icon}</span>
+                      <div className="w-11 h-11 bg-teal-600/10 dark:bg-teal-400/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <span className="text-lg">{item.icon}</span>
                       </div>
                     )}
                     <div>
-                      <h4 className="font-bold text-navy dark:text-slate-50 mb-1 text-lg">{item.title}</h4>
-                      <p className="text-slate-600 dark:text-slate-300">{item.description}</p>
+                      <h4 className="font-bold text-navy dark:text-slate-50 mb-1">{item.title}</h4>
+                      <p className="text-sm text-slate-600 dark:text-slate-300">{item.description}</p>
                     </div>
                   </div>
                 ))}
