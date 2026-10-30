@@ -921,7 +921,7 @@ export default function ServiceEditor({
                           placeholder="e.g. Online requisition with item, quantity and need-by date"
                         />
                       </Field>
-                      <Field label="Result callout" hint="Optional highlighted “Result: …” line.">
+                      <Field label="Outcome callout" hint="Optional highlighted “Outcome: …” line.">
                         <input
                           type="text"
                           className={inputCls}

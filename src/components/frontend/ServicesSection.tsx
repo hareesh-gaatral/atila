@@ -21,7 +21,6 @@ interface ServicesSectionProps {
     viewDetailsText?: string;
     items?: Array<ServiceItem>;
   };
-  /** Published DB services (server-rendered). When present they drive the cards. */
   services?: Array<any>;
 }
 
@@ -30,10 +29,6 @@ export default function ServicesSection({ data, services }: ServicesSectionProps
   const subtitle = data?.subtitle || servicesContent.subtitle;
   const viewDetailsText = data?.viewDetailsText || servicesContent.viewDetailsText;
 
-  // Normalize every source into the same card shape so the markup below is
-  // identical regardless of whether cards come from the DB Service collection
-  // (new services appear automatically), the DB home section items, or the JSON
-  // default.
   const cards: Array<{ id: string; title: string; description: string; icon?: string; link?: string }> = [];
 
   if (services && services.length > 0) {
@@ -63,13 +58,15 @@ export default function ServicesSection({ data, services }: ServicesSectionProps
   }
 
   return (
-    <section id="services" className="py-10 bg-gradient-to-b from-slate-50 to-white dark:from-[#0f172a] dark:to-[#0f172a] transition-colors">
+    <section id="services" className="py-12 bg-gradient-to-b from-slate-50 via-white to-slate-50 dark:from-[#080e1e] dark:via-[#0c1830] dark:to-[#080e1e] transition-colors duration-500">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8">
           {subtitle && (
-            <p className="text-teal-600 dark:text-teal-400 text-sm font-semibold mb-2 uppercase tracking-wider">{subtitle}</p>
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-500/10 dark:bg-teal-400/10 border border-teal-500/20 text-teal-700 dark:text-teal-300 text-xs font-semibold uppercase tracking-wider mb-2.5">
+              {subtitle}
+            </div>
           )}
-          <h2 className="text-3xl md:text-4xl font-bold text-navy dark:text-slate-50">{title}</h2>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">{title}</h2>
         </div>
         <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-5 items-stretch">
           {cards.map((card, idx) => (
@@ -77,31 +74,43 @@ export default function ServicesSection({ data, services }: ServicesSectionProps
               {card.link ? (
                 <Link
                   href={card.link}
-                  className="block bg-white dark:bg-slate-800 rounded-xl p-6 shadow-sm hover:bg-navy dark:hover:bg-teal-500 transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-teal-500/50 hover:-translate-y-1 group h-full"
+                  className="bg-white dark:bg-[#111c38] rounded-2xl p-5 border border-slate-200/90 dark:border-slate-800 shadow-xs hover:shadow-xl hover:shadow-[#183457]/15 hover:-translate-y-1.5 transition-all duration-300 group h-full flex flex-col justify-between hover:bg-gradient-to-b hover:from-[#183457] hover:to-[#0f243e] dark:hover:from-[#142d4d] dark:hover:to-[#0c1c30] hover:border-teal-400/60"
                 >
-                  {card.icon && (
-                    <div className="w-14 h-14 bg-teal-600/10 dark:bg-teal-400/20 rounded-xl flex items-center justify-center mb-4 group-hover:bg-white/20 transition">
-                      <span className="text-2xl group-hover:text-white transition">{card.icon}</span>
-                    </div>
-                  )}
-                  <h3 className="font-bold text-navy dark:text-slate-50 mb-2 group-hover:text-white transition">{card.title}</h3>
-                  <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-4 group-hover:text-white/80 transition">{card.description}</p>
-                  <div className="inline-flex items-center gap-2 text-teal-700 dark:text-teal-400 font-semibold text-sm group-hover:gap-3 group-hover:text-white transition-all">
+                  <div>
+                    {card.icon && (
+                      <div className="w-12 h-12 bg-gradient-to-br from-teal-500/10 to-teal-500/20 dark:from-teal-400/15 dark:to-teal-400/5 border border-teal-500/25 rounded-xl flex items-center justify-center mb-4 group-hover:scale-105 group-hover:bg-white/15 group-hover:border-white/30 transition-all duration-300 shadow-xs">
+                        <span className="text-2xl">{card.icon}</span>
+                      </div>
+                    )}
+                    <h3 className="font-bold text-slate-900 dark:text-white text-base mb-2 group-hover:text-white transition-colors">
+                      {card.title}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 group-hover:text-slate-200/90 leading-relaxed mb-4 transition-colors">
+                      {card.description}
+                    </p>
+                  </div>
+                  <div className="inline-flex items-center gap-1.5 text-teal-600 dark:text-teal-400 group-hover:text-teal-300 font-semibold text-xs group-hover:gap-2.5 transition-all duration-200 uppercase tracking-wider pt-2 border-t border-slate-100 dark:border-slate-800/80 group-hover:border-white/15">
                     {viewDetailsText}
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
                     </svg>
                   </div>
                 </Link>
               ) : (
-                <div className="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-sm hover:bg-navy dark:hover:bg-teal-500 transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-teal-500/50 hover:-translate-y-1 group h-full">
-                  {card.icon && (
-                    <div className="w-14 h-14 bg-teal-600/10 dark:bg-teal-400/20 rounded-xl flex items-center justify-center mb-4 group-hover:bg-white/20 transition">
-                      <span className="text-2xl group-hover:text-white transition">{card.icon}</span>
-                    </div>
-                  )}
-                  <h3 className="font-bold text-navy dark:text-slate-50 mb-2 group-hover:text-white transition">{card.title}</h3>
-                  <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed group-hover:text-white/80 transition">{card.description}</p>
+                <div className="bg-white dark:bg-[#111c38] rounded-2xl p-5 border border-slate-200/90 dark:border-slate-800 shadow-xs hover:shadow-xl hover:shadow-[#183457]/15 hover:-translate-y-1.5 transition-all duration-300 group h-full flex flex-col justify-between hover:bg-gradient-to-b hover:from-[#183457] hover:to-[#0f243e] dark:hover:from-[#142d4d] dark:hover:to-[#0c1c30] hover:border-teal-400/60">
+                  <div>
+                    {card.icon && (
+                      <div className="w-12 h-12 bg-gradient-to-br from-teal-500/10 to-teal-500/20 dark:from-teal-400/15 dark:to-teal-400/5 border border-teal-500/25 rounded-xl flex items-center justify-center mb-4 group-hover:scale-105 group-hover:bg-white/15 group-hover:border-white/30 transition-all duration-300 shadow-xs">
+                        <span className="text-2xl">{card.icon}</span>
+                      </div>
+                    )}
+                    <h3 className="font-bold text-slate-900 dark:text-white text-base mb-2 group-hover:text-white transition-colors">
+                      {card.title}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 group-hover:text-slate-200/90 leading-relaxed transition-colors">
+                      {card.description}
+                    </p>
+                  </div>
                 </div>
               )}
             </ScrollReveal>

@@ -150,7 +150,7 @@
             "Registration status tracking"
           ],
           "result": "Faster vendor registration with reduced manual data entry.",
-          "image": "/atilaimages/vendorinvitation.png"
+          "image": "/atilaimages/vendormanagementimages/vendoronboardig portaloverview.png"
         },
         {
           "num": "02",
@@ -164,7 +164,7 @@
             "Vendor classification by geography and business type"
           ],
           "result": "Complete, standardized, ERP-ready vendor profiles.",
-          "image": "/atilaimages/vendorregistration.png"
+          "image": "/atilaimages/vendormanagementimages/vendorprofile andclassification dashboard.png"
         },
         {
           "num": "03",
@@ -178,7 +178,7 @@
             "Maintain a centralized repository of vendor documents"
           ],
           "result": "Organized vendor documentation and proactive compliance tracking.",
-          "image": "/atilaimages/vendorlist.png"
+          "image": "/atilaimages/vendormanagementimages/document management compliance dashboard.png"
         },
         {
           "num": "04",
@@ -192,7 +192,7 @@
             "Classify vendors based on defined risk criteria"
           ],
           "result": "Stronger vendor due diligence and early risk identification.",
-          "image": "/atilaimages/vendorworkflow.png"
+          "image": "/atilaimages/vendormanagementimages/vendor verificationrisk dashboard.png"
         },
         {
           "num": "05",
@@ -206,7 +206,7 @@
             "Maintain a complete audit trail of approvals, decisions, and timestamps"
           ],
           "result": "Faster, transparent, and fully traceable vendor approvals.",
-          "image": "/atilaimages/vendorDashboard.png"
+          "image": "/atilaimages/vendormanagementimages/Multi-Level Approval Workflow Dashboard (1).png"
         },
         {
           "num": "06",
@@ -220,7 +220,7 @@
             "Enable eligible vendors for RFQs, purchase orders, and invoice processes, as applicable"
           ],
           "result": "ERP-aligned vendor master data and faster transaction readiness.",
-          "image": "/atilaimages/vendorinvitation.png"
+          "image": "/atilaimages/vendormanagementimages/vendoractivation dashboard interface.png"
         },
         {
           "num": "07",
@@ -235,7 +235,7 @@
             "Support vendor classification as Approved, Preferred, or Strategic based on defined criteria"
           ],
           "result": "Continuous compliance, improved supplier performance, and better sourcing decisions.",
-          "image": "/atilaimages/vendorlist.png"
+          "image": "/atilaimages/vendormanagementimages/continuous compliance dashboard mockup.png"
         },
         {
           "num": "08",
@@ -250,7 +250,7 @@
             "Maintain an audit trail of status changes, approvals, and exit decisions"
           ],
           "result": "Controlled vendor exits, preserved audit history, and a clean, well-governed vendor database.",
-          "image": "/atilaimages/vendorDashboard.png"
+          "image": "/atilaimages/vendormanagementimages/vendorexitand archival dashboard.png"
         }
       ]
     },
@@ -363,81 +363,57 @@
     {
       "slug": "budget-management",
       "title": "Budget Management",
-      "tagline": "Plan, track and control procurement budgets",
-      "description": "Set budgets, align spend to approvals and monitor budget vs actuals across every procurement transaction — with alerts before limits are exceeded.",
+      "tagline": "Plan Smarter. Spend Better.",
+      "description": "ATILA Budget Management helps enterprises plan, allocate, and monitor budgets across business units, departments, and cost centers. Gain visibility into committed and actual spending, strengthen financial control, and align every purchase with your business objectives.",
       "icon": "💼",
       "link": "/services/budget-management",
       "sections": [
         {
           "num": "01",
-          "title": "Budget Planning & Allocation",
-          "description": "Define budgets by cost center, category, project or department.",
-          "points": [
-            "Annual and periodic budget planning",
-            "Cost center and category-wise allocation",
-            "Import budgets from ERP or spreadsheets"
-          ],
-          "result": "Clear budget ownership from day one.",
+          "title": "Multi-Level Budget Planning",
+          "description": "Create and manage budgets at company, business unit, plant, department, cost center, and category levels. Establish a clear budget hierarchy with defined ownership and accountability.",
+          "points": [],
+          "result": "",
           "image": "/atilaimages/reportandanalasys.png"
         },
         {
           "num": "02",
-          "title": "Budget Requests & Approvals",
-          "description": "Budget additions and revisions follow a governed approval flow.",
-          "points": [
-            "Budget request forms with justification",
-            "Multi-level approval workflow",
-            "SLA-based reminders and escalations"
-          ],
-          "result": "Faster, governed budget approvals.",
+          "title": "Budget Utilization Tracking",
+          "description": "Track allocated, committed, consumed, and available budgets through a consolidated dashboard. Identify spending trends and monitor budget utilization across organizational units.",
+          "points": [],
+          "result": "",
           "image": "/atilaimages/vendorworkflow.png"
         },
         {
           "num": "03",
-          "title": "Commitment & Encumbrance Tracking",
-          "description": "Every PR, PO and contract reserves budget in real time.",
-          "points": [
-            "PR, PO and contract commitments reserve budget",
-            "Live committed vs available balance",
-            "Receipts and invoice adjustments update instantly"
-          ],
-          "result": "No surprise overspending.",
+          "title": "Configurable Budget Controls",
+          "description": "Configure spending thresholds, tolerance limits, alerts, and transaction-blocking rules to help prevent unauthorized or excess spending.",
+          "points": [],
+          "result": "",
           "image": "/atilaimages/procpurchaseordermanagement.png"
         },
         {
           "num": "04",
-          "title": "Budget vs Actual Tracking",
-          "description": "Compare planned, committed and actual spend continuously.",
-          "points": [
-            "Planned vs committed vs actual comparison",
-            "Variance by cost center, category and period",
-            "Drill-down to individual transactions"
-          ],
-          "result": "Full visibility into spend against plan.",
+          "title": "Budget Approval Workflows",
+          "description": "Route budget creation, revisions, and exceptions through configurable approval workflows based on organizational policies and authorization levels.",
+          "points": [],
+          "result": "",
           "image": "/atilaimages/vendorDashboard.png"
         },
         {
           "num": "05",
-          "title": "Alerts & Threshold Controls",
-          "description": "Configurable limits keep spending within policy.",
-          "points": [
-            "Threshold warnings (e.g. 70% / 90% / 100%)",
-            "Hard blocks or overrides with justification",
-            "Email and in-app notifications"
-          ],
-          "result": "Budget breaches caught early.",
+          "title": "Procurement & ERP Integration",
+          "description": "Connect budget checks with purchase requisitions and purchase orders, and align budget monitoring with procurement and ERP processes where integrations are configured.",
+          "points": [],
+          "result": "",
           "image": "/atilaimages/vendorlist.png"
         },
         {
           "num": "06",
-          "title": "Budget Analytics & Reporting",
-          "description": "Finance gets the numbers it needs for review and forecasting.",
-          "points": [
-            "Utilization and burn-rate dashboards",
-            "Forecast and re-forecast views",
-            "Exportable reports for finance reviews"
-          ],
-          "result": "Data-driven budget decisions.",
+          "title": "Reports & Financial Insights",
+          "description": "Review budget-versus-actual performance, department-wise utilization, spending patterns, and available balances to support informed planning and decisions.",
+          "points": [],
+          "result": "",
           "image": "/atilaimages/invoicemanagement.png"
         }
       ]

@@ -18,9 +18,6 @@ const FeaturesSection = dynamic(() => import('@/components/frontend/FeaturesSect
 const CTASection = dynamic(() => import('@/components/frontend/CTASection'));
 const ContactSection = dynamic(() => import('@/components/frontend/ContactSection'));
 
-// Each section component loads its default content from its JSON file in
-// src/data/json/ when no published DB section is present. page.tsx only
-// decides which component renders and passes through DB data when available.
 function renderSection(
   section: any,
   settings: Record<string, string>,
@@ -49,9 +46,6 @@ export default async function HomePage() {
   ]);
   const { sections, settings } = home;
 
-  // Index DB sections by type so we can render them in the required order,
-  // falling back to each component's JSON defaults when a section hasn't been
-  // published in the DB.
   const sectionByType: Record<string, any> = {};
   sections.forEach((s: any) => {
     if (!sectionByType[s.sectionType]) sectionByType[s.sectionType] = s;
@@ -61,7 +55,7 @@ export default async function HomePage() {
     renderSection(sectionByType[type] || { sectionType: type }, settings, publishedServices);
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-[#0f172a] transition-colors duration-500">
+    <div className="min-h-screen bg-slate-50 dark:bg-[#080e1e] transition-colors duration-500">
       <HomeContentHydrator sections={sections} settings={settings} />
       <Navbar settings={settings} />
       <main>
@@ -75,7 +69,6 @@ export default async function HomePage() {
         <ScrollReveal>{render('about')}</ScrollReveal>
         <ScrollReveal>{render('services')}</ScrollReveal>
         <ScrollReveal>{render('features')}</ScrollReveal>
-        {/* <ScrollReveal>{render('testimonials')}</ScrollReveal> */}
         <ScrollReveal>{render('faq')}</ScrollReveal>
         <ScrollReveal variant="zoom">{render('cta')}</ScrollReveal>
         <ScrollReveal>{render('contact')}</ScrollReveal>
